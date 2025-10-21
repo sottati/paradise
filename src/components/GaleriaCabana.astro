@@ -1,8 +1,9 @@
 ---
-import { getOptimizedImageUrl } from "../lib/imageUrlBuilder";
+import { Image } from "astro:assets";
+import type { Imagen } from "../data/cabanas";
 
 interface Props {
-  imagenes: any[];
+  imagenes: Imagen[];
   nombreCabana: string;
 }
 
@@ -13,21 +14,25 @@ const { imagenes, nombreCabana } = Astro.props;
   {
     imagenes.length === 1 ? (
       <div class="w-full">
-        <img
-          src={getOptimizedImageUrl(imagenes[0].asset, 1200, 800)}
+        <Image
+          src={imagenes[0].src}
           alt={imagenes[0].alt || `${nombreCabana} - Imagen 1`}
           class="w-full h-auto rounded-xl shadow-lg"
           loading="eager"
+          widths={[400, 800, 1200]}
+          sizes="100vw"
         />
       </div>
     ) : imagenes.length === 2 ? (
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {imagenes.map((imagen: any, index: number) => (
-          <img
-            src={getOptimizedImageUrl(imagen.asset, 600, 400)}
+        {imagenes.map((imagen, index) => (
+          <Image
+            src={imagen.src}
             alt={imagen.alt || `${nombreCabana} - Imagen ${index + 1}`}
             class="w-full h-full object-cover rounded-xl shadow-lg"
             loading={index === 0 ? "eager" : "lazy"}
+            widths={[400, 600, 800]}
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
         ))}
       </div>
@@ -35,22 +40,26 @@ const { imagenes, nombreCabana } = Astro.props;
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         {/* Primera imagen grande */}
         <div class="col-span-2 md:col-span-2 row-span-2">
-          <img
-            src={getOptimizedImageUrl(imagenes[0].asset, 800, 600)}
+          <Image
+            src={imagenes[0].src}
             alt={imagenes[0].alt || `${nombreCabana} - Imagen principal`}
             class="w-full h-full object-cover rounded-xl shadow-lg"
             loading="eager"
+            widths={[400, 600, 800]}
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
         </div>
 
         {/* Resto de imágenes */}
-        {imagenes.slice(1, 5).map((imagen: any, index: number) => (
+        {imagenes.slice(1, 5).map((imagen, index) => (
           <div class="col-span-1 aspect-square">
-            <img
-              src={getOptimizedImageUrl(imagen.asset, 400, 400)}
+            <Image
+              src={imagen.src}
               alt={imagen.alt || `${nombreCabana} - Imagen ${index + 2}`}
               class="w-full h-full object-cover rounded-xl shadow-lg"
               loading="lazy"
+              widths={[200, 400]}
+              sizes="(max-width: 768px) 50vw, 25vw"
             />
           </div>
         ))}
@@ -62,13 +71,15 @@ const { imagenes, nombreCabana } = Astro.props;
   {
     imagenes.length > 5 && (
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
-        {imagenes.slice(5).map((imagen: any, index: number) => (
+        {imagenes.slice(5).map((imagen, index) => (
           <div class="aspect-square">
-            <img
-              src={getOptimizedImageUrl(imagen.asset, 400, 400)}
+            <Image
+              src={imagen.src}
               alt={imagen.alt || `${nombreCabana} - Imagen ${index + 6}`}
               class="w-full h-full object-cover rounded-xl shadow-lg"
               loading="lazy"
+              widths={[200, 400]}
+              sizes="(max-width: 768px) 50vw, 25vw"
             />
           </div>
         ))}

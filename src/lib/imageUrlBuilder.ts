@@ -1,27 +1,13 @@
-import imageUrlBuilder from '@sanity/image-url';
-import { sanityClient } from './sanity';
-
-const builder = imageUrlBuilder(sanityClient);
-
-export function urlFor(source: any) {
-  return builder.image(source);
-}
-
-// Helper para generar URL optimizada
+// Helper para obtener la URL de una imagen local
 export function getOptimizedImageUrl(
-  source: any,
+  source: string | { src: string },
   width?: number,
   height?: number
-) {
-  let image = builder.image(source);
+): string {
+  // Si source es un objeto con propiedad src, extraer el src
+  const imagePath = typeof source === 'string' ? source : source.src;
 
-  if (width) {
-    image = image.width(width);
-  }
-
-  if (height) {
-    image = image.height(height);
-  }
-
-  return image.auto('format').quality(80).url();
+  // Retornar la ruta de la imagen local
+  // Astro procesará automáticamente las imágenes en /src/images/
+  return imagePath;
 }

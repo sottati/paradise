@@ -2,13 +2,21 @@
 import { Image } from "astro:assets";
 import logo from "../assets/paradiseicon.png";
 
-const links = [
+const navLinks = [
+  {
+    label: "Inicio",
+    href: "/",
+  },
+  {
+    label: "Cabañas",
+    href: "/cabanas",
+  },
   {
     label: "Casa Paradise",
     href: "/cabanas/casa-paradise",
   },
   {
-    label: "Rincon",
+    label: "Rincón",
     href: "/cabanas/rincon",
   },
   {
@@ -20,58 +28,159 @@ const links = [
 
 <nav
   id="navbar"
-  class="fixed w-full flex justify-center items-center h-16 z-50 transition-all duration-300"
+  class="fixed w-full h-16 z-50 bg-black/30 backdrop-blur-sm transition-all duration-300"
 >
-  <div
-    class="flex justify-between items-center w-full max-w-4xl px-4 text-white"
-  >
-    <div class="flex gap-4 justify-start w-80">
-      {
-        links.map((link) => (
-          <a href={link.href} class="font-light cursor-pointer underline-slide">
-            {link.label}
-          </a>
-        ))
-      }
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
+    <!-- Mobile Layout -->
+    <div class="flex md:hidden justify-between items-center h-full">
+      <!-- Logo Mobile -->
+      <div class="shrink-0">
+        <a href="/" class="flex items-center">
+          <Image src={logo} alt="Paradise Chapadmalal" class="w-10 h-10" />
+        </a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <div>
+        <button
+          id="mobile-menu-button"
+          type="button"
+          class="text-white hover:text-gray-300 focus:outline-none"
+          aria-label="Abrir menú"
+        >
+          <svg
+            id="menu-icon"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <svg
+            id="close-icon"
+            class="h-6 w-6 hidden"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
     </div>
-    <div class="flex-1 flex justify-center">
-      <a href="/">
-        <Image src={logo} alt="Paradise Chapadmalal" class="w-10 h-10" />
-      </a>
-    </div>
-    <div class="flex justify-end w-80">
-      <a
-        href="https://wa.link/ob3h9i"
-        target="_blank"
-        class="font-light cursor-pointer underline-slide">Contactanos</a
-      >
+
+    <!-- Desktop Layout -->
+    <div class="hidden md:flex justify-between items-center h-full">
+      <!-- Left Navigation -->
+      <div class="flex items-center space-x-6">
+        {
+          navLinks.slice(0, 3).map((link) => (
+            <a
+              href={link.href}
+              class="text-white font-light hover:text-gray-300 transition-colors duration-200 underline-slide"
+            >
+              {link.label}
+            </a>
+          ))
+        }
+      </div>
+
+      <!-- Logo Center -->
+      <div class="flex-1 flex justify-center">
+        <a href="/" class="flex items-center">
+          <Image src={logo} alt="Paradise Chapadmalal" class="w-10 h-10" />
+        </a>
+      </div>
+
+      <!-- Right Navigation -->
+      <div class="flex items-center space-x-6">
+        {
+          navLinks.slice(3).map((link) => (
+            <a
+              href={link.href}
+              class="text-white font-light hover:text-gray-300 transition-colors duration-200 underline-slide"
+            >
+              {link.label}
+            </a>
+          ))
+        }
+        <a
+          href="https://wa.link/ob3h9i"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-white font-light hover:text-gray-300 transition-colors duration-200 underline-slide"
+        >
+          Contactar
+        </a>
+      </div>
     </div>
   </div>
 </nav>
 
-<script>
-  // Agregar fondo a la navbar al hacer scroll
-  const navbar = document.getElementById("navbar");
-
-  function handleScroll() {
-    if (window.scrollY > 50) {
-      navbar?.classList.add("navbar-scrolled");
-    } else {
-      navbar?.classList.remove("navbar-scrolled");
+<!-- Mobile menu (outside nav for backdrop-blur to work) -->
+<div
+  id="mobile-menu"
+  class="hidden md:hidden fixed top-16 left-0 right-0 z-40 bg-black/30 backdrop-blur-sm transition-all duration-300"
+>
+  <div class="px-2 pt-2 pb-3 space-y-1">
+    {
+      navLinks.map((link) => (
+        <a
+          href={link.href}
+          class="text-white hover:bg-white/10 block px-3 py-2 rounded-md text-base font-light transition-colors duration-200"
+        >
+          {link.label}
+        </a>
+      ))
     }
-  }
+    <a
+      href="https://wa.link/ob3h9i"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="text-white hover:text-gray-300 block px-3 py-2 text-base font-light transition-colors duration-200 underline-slide"
+    >
+      Contactar
+    </a>
+  </div>
+</div>
 
-  // Ejecutar al cargar la página
-  handleScroll();
+<script>
+  // Mobile menu toggle
+  const mobileMenuButton = document.getElementById("mobile-menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const menuIcon = document.getElementById("menu-icon");
+  const closeIcon = document.getElementById("close-icon");
 
-  // Ejecutar al hacer scroll
-  window.addEventListener("scroll", handleScroll);
+  mobileMenuButton?.addEventListener("click", () => {
+    const isOpen = !mobileMenu?.classList.contains("hidden");
+
+    if (isOpen) {
+      mobileMenu?.classList.add("hidden");
+      menuIcon?.classList.remove("hidden");
+      closeIcon?.classList.add("hidden");
+    } else {
+      mobileMenu?.classList.remove("hidden");
+      menuIcon?.classList.add("hidden");
+      closeIcon?.classList.remove("hidden");
+    }
+  });
+
+  // Close mobile menu when clicking on a link
+  const mobileLinks = mobileMenu?.querySelectorAll("a");
+  mobileLinks?.forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu?.classList.add("hidden");
+      menuIcon?.classList.remove("hidden");
+      closeIcon?.classList.add("hidden");
+    });
+  });
 </script>
-
-<style>
-  .navbar-scrolled {
-    background-color: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  }
-</style>

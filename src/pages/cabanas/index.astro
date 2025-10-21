@@ -1,53 +1,58 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
-import { getCabanas } from "../../lib/sanity";
-import { getOptimizedImageUrl } from "../../lib/imageUrlBuilder";
+import { getCabanas } from "../../data/cabanas";
 
-const cabanas = await getCabanas();
+const cabanas = getCabanas();
 ---
 
 <Layout>
-  <section class="py-16 px-4 md:px-8">
+  <section class="py-24 px-4 md:px-8">
     <div class="max-w-7xl mx-auto">
       <h1 class="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-4">
         Nuestras Cabañas
       </h1>
       <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-        Descubre nuestras cómodas cabañas en Chapadmalal, perfectas para tu escapada.
+        Descubre nuestras cómodas cabañas en Chapadmalal, perfectas para tu
+        escapada.
       </p>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {
-          cabanas.map((cabana: any) => (
+          cabanas.map((cabana) => (
             <a
               href={`/cabanas/${cabana.slug.current}`}
               class="group block bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
             >
               {cabana.imagenes && cabana.imagenes[0] && (
                 <div class="aspect-video overflow-hidden">
-                  <img
-                    src={getOptimizedImageUrl(cabana.imagenes[0].asset, 600, 400)}
+                  <Image
+                    src={cabana.imagenes[0].src}
                     alt={cabana.imagenes[0].alt || cabana.nombre}
                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
+                    widths={[400, 600, 800]}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 </div>
               )}
               <div class="p-6">
-                <h2 class="text-2xl font-semibold text-gray-800 mb-2">
-                  {cabana.nombre}
-                </h2>
-                <p class="text-gray-600 flex items-center gap-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
-                  </svg>
-                  {cabana.capacidad}
-                </p>
+                <div class="flex justify-between items-center">
+                  <h2 class="text-2xl font-semibold text-gray-800 mb-2">
+                    {cabana.nombre}
+                  </h2>
+                  <p class="text-gray-600 flex items-center gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                    </svg>
+                    {cabana.capacidad}
+                  </p>
+                </div>
                 <div class="mt-4 text-blue-600 group-hover:text-blue-700 font-medium flex items-center gap-2">
                   Ver más
                   <svg

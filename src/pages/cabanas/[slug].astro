@@ -1,14 +1,14 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import { getCabanas, getCabanaBySlug } from "../../lib/sanity";
+import { getCabanas } from "../../data/cabanas";
 import GaleriaCabana from "../../components/GaleriaCabana.astro";
 
 export const prerender = true;
 
 export async function getStaticPaths() {
-  const cabanas = await getCabanas();
+  const cabanas = getCabanas();
 
-  return cabanas.map((cabana: any) => ({
+  return cabanas.map((cabana) => ({
     params: { slug: cabana.slug.current },
     props: { cabana },
   }));
@@ -18,12 +18,12 @@ const { cabana } = Astro.props;
 ---
 
 <Layout>
-  <section class="py-16 px-4 md:px-8">
+  <section class="py-28 md:py-24 px-4 md:px-8">
     <div class="max-w-7xl mx-auto">
       <!-- Header -->
       <div class="mb-8 flex justify-between items-start">
         <div>
-          <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <h1 class="text-4xl md:text-5xl font-bold text-black mb-4">
             {cabana.nombre}
           </h1>
           <div class="flex items-center gap-2 text-gray-600">
@@ -41,17 +41,23 @@ const { cabana } = Astro.props;
           </div>
         </div>
         <a
-          href="/#contacto"
-          class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200"
+          href="https://wa.link/ob3h9i"
+          target="_blank"
+          class="text-black underline font-semibold md:px-8 py-3 text-end transition-colors duration-200"
         >
           Consultar disponibilidad
         </a>
       </div>
 
       <!-- Galería -->
-      {cabana.imagenes && cabana.imagenes.length > 0 && (
-        <GaleriaCabana imagenes={cabana.imagenes} nombreCabana={cabana.nombre} />
-      )}
+      {
+        cabana.imagenes && cabana.imagenes.length > 0 && (
+          <GaleriaCabana
+            imagenes={cabana.imagenes}
+            nombreCabana={cabana.nombre}
+          />
+        )
+      }
     </div>
   </section>
 </Layout>

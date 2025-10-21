@@ -1,26 +1,11 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
-import sanity from '@sanity/astro';
-import vercel from '@astrojs/vercel/serverless';
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'server',
-  adapter: vercel({
-    webAnalytics: {
-      enabled: true
-    }
-  }),
-  integrations: [
-    sanity({
-      projectId: 'vqbixtq7',
-      dataset: 'production',
-      useCdn: false,
-      apiVersion: '2024-01-01',
-      studioBasePath: '/studio',
-    }),
-  ],
+  output: 'static',
+  integrations: [],
   vite: {
     plugins: [tailwindcss()],
   },

@@ -3,11 +3,63 @@ import { Image } from "astro:assets";
 import logo from "../assets/paradiseiso.png";
 
 const currentYear = new Date().getFullYear();
+
+// Datos de contacto
+const contactLinks = [
+  {
+    label: "Whatsapp",
+    href: "https://wa.link/ob3h9i",
+    external: true,
+  },
+];
+
+// Enlaces rápidos
+const quickLinks = [
+  {
+    label: "Inicio",
+    href: "/",
+    external: false,
+  },
+  {
+    label: "Cabañas",
+    href: "/cabanas",
+    external: false,
+  },
+  {
+    label: "Casa Paradise",
+    href: "/cabanas/casa-paradise",
+    external: false,
+  },
+  {
+    label: "Rincón",
+    href: "/cabanas/rincon",
+    external: false,
+  },
+  {
+    label: "Del Mar",
+    href: "/cabanas/del-mar",
+    external: false,
+  },
+  {
+    label: "Ubicación",
+    href: "https://www.google.com/maps/place/Caba%C3%B1as+Paradise+Chapadmalal/@-38.1759253,-57.6533759,17z/data=!4m8!3m7!1s0x95851d1592f6455b:0x4565673369ada6ae!8m2!3d-38.1759253!4d-57.6533759!9m1!1b1!16s%2Fg%2F11hf4gg4_f",
+    external: true,
+  },
+];
+
+// Redes sociales
+const socialLinks = [
+  {
+    name: "Instagram",
+    href: "https://www.instagram.com/paradisechapadmalal/",
+    icon: "instagram",
+  },
+];
 ---
 
 <footer class="bg-gray-900 text-white py-12 px-4 md:px-8">
   <div class="max-w-7xl mx-auto">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
       <!-- Logo y descripción -->
       <div class="flex flex-col items-center md:items-start">
         <Image
@@ -27,18 +79,20 @@ const currentYear = new Date().getFullYear();
       <div>
         <h3 class="text-lg font-semibold mb-4">Contacto</h3>
         <ul class="space-y-2 text-gray-400 text-sm">
-          <li>Chapadmalal, Buenos Aires</li>
-          <li>
-            <a href="tel:+54" class="hover:text-white transition-colors"
-              >Teléfono</a
-            >
-          </li>
-          <li>
-            <a
-              href="mailto:info@paradise.com"
-              class="hover:text-white transition-colors">Email</a
-            >
-          </li>
+          {
+            contactLinks.map((link) => (
+              <li>
+                <a
+                  href={link.href}
+                  target={link.external ? "_blank" : undefined}
+                  rel={link.external ? "noopener noreferrer" : undefined}
+                  class="hover:text-white transition-colors"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))
+          }
         </ul>
       </div>
 
@@ -46,29 +100,41 @@ const currentYear = new Date().getFullYear();
       <div>
         <h3 class="text-lg font-semibold mb-4">Enlaces</h3>
         <ul class="space-y-2 text-gray-400 text-sm">
-          <li>
-            <a href="/" class="hover:text-white transition-colors">Inicio</a>
-          </li>
-          <li>
-            <a href="/cabanas" class="hover:text-white transition-colors">Cabañas</a>
-          </li>
-          <li>
-            <a href="/cabanas/casa-paradise" class="hover:text-white transition-colors">Casa Paradise</a>
-          </li>
-          <li>
-            <a href="/cabanas/rincon" class="hover:text-white transition-colors">Rincón</a>
-          </li>
-          <li>
-            <a href="/cabanas/del-mar" class="hover:text-white transition-colors">Del Mar</a>
-          </li>
-          <li>
-            <a
-              href="https://www.google.com/maps/place/Caba%C3%B1as+Paradise+Chapadmalal/@-38.1759253,-57.6533759,17z/data=!4m8!3m7!1s0x95851d1592f6455b:0x4565673369ada6ae!8m2!3d-38.1759253!4d-57.6533759!9m1!1b1!16s%2Fg%2F11hf4gg4_f"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="hover:text-white transition-colors">Ubicación</a
-            >
-          </li>
+          {
+            quickLinks.map((link) => (
+              <li>
+                <a
+                  href={link.href}
+                  target={link.external ? "_blank" : undefined}
+                  rel={link.external ? "noopener noreferrer" : undefined}
+                  class="hover:text-white transition-colors"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <!-- Redes Sociales -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Redes Sociales</h3>
+        <ul class="space-y-2 text-gray-400 text-sm">
+          {
+            socialLinks.map((social) => (
+              <li>
+                <a
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hover:text-white transition-colors"
+                >
+                  {social.name}
+                </a>
+              </li>
+            ))
+          }
         </ul>
       </div>
     </div>
