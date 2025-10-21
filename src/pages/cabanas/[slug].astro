@@ -49,9 +49,14 @@ const { cabana } = Astro.props;
       </div>
 
       <!-- Galería -->
-      {cabana.imagenes && cabana.imagenes.length > 0 && (
-        <GaleriaCabana imagenes={cabana.imagenes} nombreCabana={cabana.nombre} />
-      )}
+      {
+        cabana.imagenes && cabana.imagenes.length > 0 && (
+          <GaleriaCabana
+            imagenes={cabana.imagenes}
+            nombreCabana={cabana.nombre}
+          />
+        )
+      }
     </div>
   </section>
 </Layout>
