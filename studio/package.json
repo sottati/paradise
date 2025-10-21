@@ -1,0 +1,22 @@
+{
+  "name": "studio",
+  "version": "1.0.0",
+  "description": "Sanity Studio for Paradise Chapadmalal",
+  "type": "module",
+  "scripts": {
+    "dev": "sanity dev",
+    "start": "sanity start",
+    "build": "sanity build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sanity/astro": "^3.2.10",
+    "@sanity/client": "^7.12.0",
+    "@sanity/image-url": "^1.2.0",
+    "@sanity/vision": "^4.11.0",
+    "sanity": "^4.11.0",
+    "styled-components": "^6.1.15"
+  }
+}

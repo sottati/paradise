@@ -1,0 +1,107 @@
+---
+interface Resena {
+  nombre: string;
+  estrellas: number;
+  fechaRelativa: string;
+  texto: string;
+}
+
+const resenas: Resena[] = [
+  {
+    nombre: "Facundo Mones Ruiz",
+    estrellas: 5,
+    fechaRelativa: "Hace 8 meses",
+    texto:
+      "Las cabañas increíbles y los anfitriones mucho más. Vivi y Pato unos genios. Siempre estuvieron atentos y predispuestos para todo lo que necesitamos. (Eso es muy difícil de encontrar). Con respecto a las cabañas, la experiencia fue muy linda. Cómodas, equipadas y cuentan con un jardín hermoso. Otro dato a destacar, es la excelente ubicación en la que se encuentran las mismas. A cuatro cuadras de cruz del sur y a cinco cuadras de una zona de almacenes y restaurantes. Experiencia 10/10 que ya quiero volver a vivir.",
+  },
+  {
+    nombre: "Catalina Contepomi",
+    estrellas: 5,
+    fechaRelativa: "Hace 8 meses",
+    texto:
+      "Fui con mi grupo de amigas a la cabaña de 6 y todo estuvo impecable!! el espacio es muy cómodo y muy lindo. El jardín es un espacio muy grande y clave para los momentos en los que compartíamos con los otros grupos de amigas de las otras cabañas. Viví y Pato fueron muy atentos a cada detalle. Era nuestra primera vez en chapa y nos recomendaron un montón de cosas para hacer. Nos hicieron sentir muy cómodas y cuidadas. La ubicación es la mejor ubicación que se puede tener, se puede hacer todo caminando.",
+  },
+  {
+    nombre: "Reed",
+    estrellas: 5,
+    fechaRelativa: "Hace 6 meses",
+    texto:
+      "Very nice hosts and nice cabañas. Patricio lent me one of his surfboards to use and they were super helpful with recommendations of places to go and the various beaches. They even gave us a ride to the estacion omnibus when we left. Recommend!",
+  },
+  {
+    nombre: "Marcelo Valerio",
+    estrellas: 5,
+    fechaRelativa: "Hace 7 meses",
+    texto:
+      "Excelente lugar para descansar, desconectarse y conectarse con la naturaleza. Las cabañas buenísimas, equipadas y todo lo necesario para disfrutar de la estadía. Estuve ahí con mi mujer y la pasamos bárbaros, con ganas de volver nuevamente. Los dueños Pato y Viví, super divinos y con una energía maravillosa y muy amables, gracias por todo, volveremos.",
+  },
+  {
+    nombre: "Tahiel Tomasini",
+    estrellas: 5,
+    fechaRelativa: "Hace 8 meses",
+    texto:
+      "Súper cómodas, te hacían sentir como en casa, perfectas para descansar y desconectarse. La decoración era hermosa, con detalles rústicos y acogedores que les daban un aire especial. Además, la ubicación era ideal, permitiéndote disfrutar de la naturaleza o explorar los alrededores con facilidad. Un lugar perfecto para relajarse y disfrutar la naturaleza.",
+  },
+  {
+    nombre: "Joha Brauchler",
+    estrellas: 5,
+    fechaRelativa: "Hace 9 meses",
+    texto:
+      "Alquilé este espacio para brindar los retiros y fue algo mágico! Nos sentimos todo el tiempo no solo en Cabañas, sino en un hogar con calidez y con amor en cada detalle. Viví y pato, los dueños, súper atentos y amorosos. Tienen un jardín hermoso donde se puede disfrutar de la tranquilidad y sonido de los pájaros. Ideal para compartir momentos. Vamos a volver por más!",
+  },
+];
+---
+
+<div class="max-w-7xl mx-auto p-4 md:p-8 md:py-16">
+  <!-- Header con calificación general -->
+  <a
+    href="https://www.google.com/maps/place/Caba%C3%B1as+Paradise+Chapadmalal/@-38.1759253,-57.6533759,17z/data=!4m8!3m7!1s0x95851d1592f6455b:0x4565673369ada6ae!8m2!3d-38.1759253!4d-57.6533759!9m1!1b1!16s%2Fg%2F11hf4gg4_f?entry=ttu&g_ep=EgoyMDI1MTAxNC4wIKXMDSoASAFQAw%3D%3D"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="flex items-center justify-center gap-4 mb-8 hover:opacity-80 transition-opacity"
+  >
+    <div class="text-5xl font-bold text-gray-800">4.7</div>
+    <div>
+      <div class="flex gap-1 mb-1">
+        <span class="text-amber-400 text-2xl">★</span>
+        <span class="text-amber-400 text-2xl">★</span>
+        <span class="text-amber-400 text-2xl">★</span>
+        <span class="text-amber-400 text-2xl">★</span>
+        <span class="relative inline-block text-2xl">
+          <span class="text-gray-300">★</span>
+          <span
+            class="absolute top-0 left-0 text-amber-400 overflow-hidden"
+            style="width: 50%;">★</span
+          >
+        </span>
+      </div>
+      <p class="text-sm text-gray-600">64 opiniones en Google Maps</p>
+    </div>
+  </a>
+
+  <!-- Grid de reseñas -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {
+      resenas.map((resena) => (
+        <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-200">
+          <div class="mb-4">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+              {resena.nombre}
+            </h3>
+            <div class="flex gap-2 mb-2">
+              <div class="flex">
+                {Array.from({ length: resena.estrellas }).map(() => (
+                  <span class="text-amber-400 text-xl">★</span>
+                ))}
+              </div>
+              <p class="text-sm text-gray-500 my-auto">
+                {resena.fechaRelativa}
+              </p>
+            </div>
+          </div>
+          <p class="text-gray-600 leading-relaxed text-sm">{resena.texto}</p>
+        </div>
+      ))
+    }
+  </div>
+</div>

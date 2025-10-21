@@ -1,0 +1,63 @@
+---
+import { Sparkles, Flame, ShieldCheck, Wifi, Dog, Tv } from "lucide-astro";
+
+const features = [
+  {
+    title: "Servicios",
+    description:
+      "Servicio de blanco (sabanas). Kit de cortesia (cafe, te, agua mineral, bombones).",
+    icon: Sparkles,
+  },
+  {
+    title: "Parrilla y Fogonero",
+    description:
+      "Espacio de uso comun para poder realizar asados o comidas y disfrutar de fogones entre amigos.",
+    icon: Flame,
+  },
+  {
+    title: "Espacio cerrado",
+    description:
+      "Predio cerrado con cerco natural. Camaras de seguridad grabando 24/7 e iluminacion con sensor de movimiento.",
+    icon: ShieldCheck,
+  },
+  {
+    title: "Wi-Fi",
+    description:
+      "Fibra optica e internet satelital, para que puedas hacer Home Office desde cualquiera de las cabañas",
+    icon: Wifi,
+  },
+  {
+    title: "Pet Friendly",
+    description:
+      "Aceptamos mascotas, preferentemente de razas pequeñas, para preservar el cuidado de las cabanas.",
+    icon: Dog,
+  },
+  {
+    title: "Smart TV",
+    description:
+      "Television satelital, 100% digital. Contamos con televisores Smart para poder utilizar aplicaciones de streaming de series/peliculas.",
+    icon: Tv,
+  },
+];
+---
+
+<section class="w-full bg-white py-32 px-8">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold text-left mb-8">Amenities</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {
+        features.map((feature) => (
+          <div class="bg-gray-100 p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <feature.icon class="w-8 h-8 text-black" />
+              <h3 class="text-xl font-semibold">{feature.title}</h3>
+            </div>
+            <p class="text-black font-light leading-relaxed">
+              {feature.description}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

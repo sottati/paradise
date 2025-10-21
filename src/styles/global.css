@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-family-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --animate-fade-in-bottom: fade-in-bottom 1s ease-out forwards;
+  --animate-fade-in-top: fade-in-top 1s ease-out forwards;
+
+  @keyframes fade-in-bottom {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in-top {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Underline animation */
+.underline-slide {
+  @apply relative inline-block;
+}
+
+.underline-slide::after {
+  @apply absolute w-full h-px bottom-0 left-0 bg-current;
+  content: "";
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out, transform-origin 0s 0.3s;
+}
+
+.underline-slide:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out, transform-origin 0s;
+}
