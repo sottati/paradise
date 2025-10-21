@@ -2,12 +2,14 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import sanity from '@sanity/astro';
-import vercel from '@astrojs/vercel';
+import node from '@astrojs/node';
 
 // https://astro.build/config
 export default defineConfig({
   output: 'server',
-  adapter: vercel(),
+  adapter: node({
+    mode: 'standalone'
+  }),
   integrations: [
     sanity({
       projectId: 'vqbixtq7',
