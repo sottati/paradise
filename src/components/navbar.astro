@@ -2,15 +2,7 @@
 import { Image } from "astro:assets";
 import logo from "../assets/paradiseicon.png";
 
-const navLinks = [
-  {
-    label: "Inicio",
-    href: "/",
-  },
-  {
-    label: "Cabañas",
-    href: "/cabanas",
-  },
+const leftNavLinks = [
   {
     label: "Casa Paradise",
     href: "/cabanas/casa-paradise",
@@ -23,6 +15,18 @@ const navLinks = [
     label: "Del Mar",
     href: "/cabanas/del-mar",
   },
+];
+
+const mobileNavLinks = [
+  {
+    label: "Inicio",
+    href: "/",
+  },
+  {
+    label: "Cabañas",
+    href: "/cabanas",
+  },
+  ...leftNavLinks,
 ];
 ---
 
@@ -83,7 +87,7 @@ const navLinks = [
       <!-- Left Navigation -->
       <div class="flex items-center space-x-6">
         {
-          navLinks.slice(0, 3).map((link) => (
+          leftNavLinks.map((link) => (
             <a
               href={link.href}
               class="text-white font-light hover:text-gray-300 transition-colors duration-200 underline-slide"
@@ -103,23 +107,13 @@ const navLinks = [
 
       <!-- Right Navigation -->
       <div class="flex items-center space-x-6">
-        {
-          navLinks.slice(3).map((link) => (
-            <a
-              href={link.href}
-              class="text-white font-light hover:text-gray-300 transition-colors duration-200 underline-slide"
-            >
-              {link.label}
-            </a>
-          ))
-        }
         <a
           href="https://wa.link/ob3h9i"
           target="_blank"
           rel="noopener noreferrer"
           class="text-white font-light hover:text-gray-300 transition-colors duration-200 underline-slide"
         >
-          Contactar
+          Contactanos
         </a>
       </div>
     </div>
@@ -133,7 +127,7 @@ const navLinks = [
 >
   <div class="px-2 pt-2 pb-3 space-y-1">
     {
-      navLinks.map((link) => (
+      mobileNavLinks.map((link) => (
         <a
           href={link.href}
           class="text-white hover:bg-white/10 block px-3 py-2 rounded-md text-base font-light transition-colors duration-200"
@@ -148,7 +142,7 @@ const navLinks = [
       rel="noopener noreferrer"
       class="text-white hover:text-gray-300 block px-3 py-2 text-base font-light transition-colors duration-200 underline-slide"
     >
-      Contactar
+      Contactanos
     </a>
   </div>
 </div>
