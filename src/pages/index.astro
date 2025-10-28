@@ -7,11 +7,41 @@ import { Image } from "astro:assets";
 import fogonero from "../images/casa-paradise/fogonero.png";
 import Opiniones from "../components/opiniones.astro";
 import Mapa from "../components/Mapa.astro";
+import ReelIg from "../components/reel-ig.astro";
+
+const reels = [
+  {
+    url: "https://www.instagram.com/reel/DDe7CMVR5dP/?igsh=YWFkdGR5bWlhbGo5",
+    version: "14",
+    containerClass: "flex flex-block justify-center items-center",
+  },
+  {
+    url: "https://www.instagram.com/reel/DFX84JUR3G_/?igsh=MWNjendxdmk5NWltZQ==",
+    version: "14",
+    containerClass: "flex flex-block justify-center items-center",
+  },
+  {
+    url: "https://www.instagram.com/reel/CzYaTLPrh3e/?igsh=dDg5ZmlyZnlpM29v",
+    version: "14",
+    containerClass: "flex flex-block justify-center items-center",
+  },
+];
 ---
 
 <Layout>
   <Hero />
   <Features />
+  <div class="flex flex-row flex-wrap gap-4 justify-around items-center mb-8">
+    {
+      reels.map((reel) => (
+        <ReelIg
+          url={reel.url}
+          version={reel.version}
+          containerClass={reel.containerClass}
+        />
+      ))
+    }
+  </div>
   <section
     class="grid grid-cols-1 md:grid-cols-2 items-center justify-center md:p-12 md:gap-4 md:h-screen"
   >

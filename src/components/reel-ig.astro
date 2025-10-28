@@ -1,0 +1,25 @@
+---
+// Definir las props del componente
+interface Props {
+  url: string;
+  version?: string;
+  containerClass?: string;
+}
+
+// Obtener las props con valores por defecto
+const {
+  url,
+  version = "14",
+  containerClass = "flex flex-block justify-center items-center",
+} = Astro.props;
+---
+
+<div class={containerClass}>
+  <blockquote
+    class="instagram-media"
+    data-instgrm-permalink={url}
+    data-instgrm-version={version}
+  >
+  </blockquote>
+</div>
+<script async src="//www.instagram.com/embed.js"></script>
