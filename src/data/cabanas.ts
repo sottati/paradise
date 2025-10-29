@@ -1,4 +1,7 @@
-import type { ImageMetadata } from 'astro';
+import type { ImageMetadata } from "astro";
+import portadaCasaParadise from "../images/casa-paradise/portada.png";
+import portadaDelMar from "../images/del-mar/delmar.png";
+import portadaRincon from "../images/rincon/01rincon.png";
 
 export interface Imagen {
   src: ImageMetadata;
@@ -12,25 +15,33 @@ export interface Cabana {
     current: string;
   };
   capacidad: string;
+  portada: ImageMetadata;
   imagenes: Imagen[];
 }
 
 // Función helper para obtener imágenes de una carpeta
 function getImagesFromFolder(folderPath: string, cabanaName: string): Imagen[] {
   // Usamos import.meta.glob para obtener todas las imágenes de la carpeta
-  const imageModules = import.meta.glob<{ default: ImageMetadata }>('/src/images/**/*.{png,jpg,jpeg,JPG,PNG,JPEG}', { eager: true });
+  const imageModules = import.meta.glob<{ default: ImageMetadata }>(
+    "/src/images/**/*.{png,jpg,jpeg,JPG,PNG,JPEG}",
+    { eager: true }
+  );
 
   const images: Imagen[] = [];
 
   for (const path in imageModules) {
     // Filtrar solo las imágenes de la carpeta específica
     if (path.includes(folderPath)) {
-      const fileName = path.split('/').pop()?.replace(/\.[^/.]+$/, '') || '';
+      const fileName =
+        path
+          .split("/")
+          .pop()
+          ?.replace(/\.[^/.]+$/, "") || "";
       const imageMetadata = imageModules[path].default;
 
       images.push({
         src: imageMetadata,
-        alt: `${cabanaName} - ${fileName}`
+        alt: `${cabanaName} - ${fileName}`,
       });
     }
   }
@@ -44,29 +55,32 @@ export const cabanas: Cabana[] = [
     _id: "casa-paradise",
     nombre: "Casa Paradise",
     slug: {
-      current: "casa-paradise"
+      current: "casa-paradise",
     },
     capacidad: "6 personas",
-    imagenes: getImagesFromFolder('casa-paradise', 'Casa Paradise')
+    portada: portadaCasaParadise,
+    imagenes: getImagesFromFolder("casa-paradise", "Casa Paradise"),
   },
   {
     _id: "del-mar",
     nombre: "Del Mar",
     slug: {
-      current: "del-mar"
+      current: "del-mar",
     },
     capacidad: "4 personas",
-    imagenes: getImagesFromFolder('del-mar', 'Del Mar')
+    portada: portadaDelMar,
+    imagenes: getImagesFromFolder("del-mar", "Del Mar"),
   },
   {
     _id: "rincon",
     nombre: "Rincón",
     slug: {
-      current: "rincon"
+      current: "rincon",
     },
     capacidad: "2 personas",
-    imagenes: getImagesFromFolder('rincon', 'Rincón')
-  }
+    portada: portadaRincon,
+    imagenes: getImagesFromFolder("rincon", "Rincón"),
+  },
 ];
 
 // Helper para obtener todas las cabañas
@@ -76,5 +90,5 @@ export function getCabanas(): Cabana[] {
 
 // Helper para obtener una cabaña por slug
 export function getCabanaBySlug(slug: string): Cabana | undefined {
-  return cabanas.find(cabana => cabana.slug.current === slug);
+  return cabanas.find((cabana) => cabana.slug.current === slug);
 }

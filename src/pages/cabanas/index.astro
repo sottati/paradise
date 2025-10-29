@@ -24,11 +24,11 @@ const cabanas = getCabanas();
               href={`/cabanas/${cabana.slug.current}`}
               class="group block bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
             >
-              {cabana.imagenes && cabana.imagenes[0] && (
-                <div class="aspect-video overflow-hidden">
+              {cabana.portada && (
+                <div class="aspect-square overflow-hidden">
                   <Image
-                    src={cabana.imagenes[0].src}
-                    alt={cabana.imagenes[0].alt || cabana.nombre}
+                    src={cabana.portada}
+                    alt={`Portada de ${cabana.nombre}`}
                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                     widths={[400, 600, 800]}
