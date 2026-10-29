@@ -1,180 +1,41 @@
 ---
 import { Image } from "astro:assets";
 import logo from "../assets/paradiseicon.png";
-
-const leftNavLinks = [
-  {
-    label: "Casa Paradise",
-    href: "/cabanas/casa-paradise",
-  },
-  {
-    label: "Rincón",
-    href: "/cabanas/rincon",
-  },
-  {
-    label: "Del Mar",
-    href: "/cabanas/del-mar",
-  },
-];
-
-const mobileNavLinks = [
-  {
-    label: "Inicio",
-    href: "/",
-  },
-  {
-    label: "Cabañas",
-    href: "/cabanas",
-  },
-  ...leftNavLinks,
-];
+import { SiteNavigation } from "./site-navigation";
 ---
 
-<nav
-  id="navbar"
-  class="fixed w-full h-16 z-50 bg-black/30 backdrop-blur-sm transition-all duration-300"
->
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
-    <!-- Mobile Layout -->
-    <div class="flex md:hidden justify-between items-center h-full">
-      <!-- Logo Mobile -->
-      <div class="shrink-0">
-        <a href="/" class="flex items-center">
-          <Image src={logo} alt="Paradise Chapadmalal" class="w-10 h-10" />
-        </a>
-      </div>
-
-      <!-- Mobile menu button -->
-      <div>
-        <button
-          id="mobile-menu-button"
-          type="button"
-          class="text-white hover:text-gray-300 focus:outline-none"
-          aria-label="Abrir menú"
-        >
-          <svg
-            id="menu-icon"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-          <svg
-            id="close-icon"
-            class="h-6 w-6 hidden"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"></path>
-          </svg>
-        </button>
-      </div>
-    </div>
-
-    <!-- Desktop Layout -->
-    <div class="hidden md:grid grid-cols-3 items-center h-full">
-      <!-- Left Navigation -->
-      <div class="flex items-center space-x-6">
-        {
-          leftNavLinks.map((link) => (
-            <a
-              href={link.href}
-              class="text-white font-light hover:text-gray-300 transition-colors duration-200 underline-slide"
-            >
-              {link.label}
-            </a>
-          ))
-        }
-      </div>
-
-      <!-- Logo Center -->
-      <div class="flex justify-center">
-        <a href="/" class="flex items-center">
-          <Image src={logo} alt="Paradise Chapadmalal" class="w-10 h-10" />
-        </a>
-      </div>
-
-      <!-- Right Navigation -->
-      <div class="flex items-center justify-end space-x-6">
-        <a
-          href="https://wa.link/ob3h9i"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-white font-light hover:text-gray-300 transition-colors duration-200 underline-slide"
-        >
-          Contactanos
-        </a>
-      </div>
-    </div>
-  </div>
-</nav>
-
-<!-- Mobile menu (outside nav for backdrop-blur to work) -->
-<div
-  id="mobile-menu"
-  class="hidden md:hidden fixed top-16 left-0 right-0 z-40 bg-black/30 backdrop-blur-sm transition-all duration-300"
->
-  <div class="px-2 pt-2 pb-3 space-y-1">
-    {
-      mobileNavLinks.map((link) => (
-        <a
-          href={link.href}
-          class="text-white hover:bg-white/10 block px-3 py-2 rounded-md text-base font-light transition-colors duration-200"
-        >
-          {link.label}
-        </a>
-      ))
-    }
+<header class="sticky top-0 z-40 border-b bg-background/95 backdrop-blur-md">
+  <div class="page-container flex h-20 items-center justify-between gap-4">
     <a
-      href="https://wa.link/ob3h9i"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="text-white hover:text-gray-300 block px-3 py-2 text-base font-light transition-colors duration-200 underline-slide"
+      href="/"
+      class="flex shrink-0 items-center gap-2.5"
+      aria-label="Paradise Chapadmalal, inicio"
     >
-      Contactanos
+      <Image
+        src={logo}
+        alt=""
+        width={40}
+        height={40}
+        class="size-10 object-contain"
+      />
+      <span class="flex flex-col">
+        <span class="text-lg font-semibold tracking-tight">paradise</span>
+        <span class="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+          Chapadmalal
+        </span>
+      </span>
     </a>
+    <SiteNavigation client:load pathname={Astro.url.pathname} />
   </div>
-</div>
-
-<script>
-  // Mobile menu toggle
-  const mobileMenuButton = document.getElementById("mobile-menu-button");
-  const mobileMenu = document.getElementById("mobile-menu");
-  const menuIcon = document.getElementById("menu-icon");
-  const closeIcon = document.getElementById("close-icon");
-
-  mobileMenuButton?.addEventListener("click", () => {
-    const isOpen = !mobileMenu?.classList.contains("hidden");
-
-    if (isOpen) {
-      mobileMenu?.classList.add("hidden");
-      menuIcon?.classList.remove("hidden");
-      closeIcon?.classList.add("hidden");
-    } else {
-      mobileMenu?.classList.remove("hidden");
-      menuIcon?.classList.add("hidden");
-      closeIcon?.classList.remove("hidden");
-    }
-  });
-
-  // Close mobile menu when clicking on a link
-  const mobileLinks = mobileMenu?.querySelectorAll("a");
-  mobileLinks?.forEach((link) => {
-    link.addEventListener("click", () => {
-      mobileMenu?.classList.add("hidden");
-      menuIcon?.classList.remove("hidden");
-      closeIcon?.classList.add("hidden");
-    });
-  });
-</script>
+  <noscript>
+    <nav
+      aria-label="Navegación"
+      class="page-container flex flex-wrap gap-4 pb-4 text-sm"
+    >
+      <a href="/cabanas">Cabañas</a>
+      <a href="/#experiencia">La experiencia</a>
+      <a href="/#ubicacion">Ubicación</a>
+      <a href="https://wa.link/ob3h9i">Consultar disponibilidad</a>
+    </nav>
+  </noscript>
+</header>

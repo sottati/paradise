@@ -2,65 +2,115 @@
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/hero.astro";
 import Features from "../components/features.astro";
-
 import { Image } from "astro:assets";
+import { ArrowUpRight, Camera } from "@lucide/astro";
 import fogonero from "../images/casa-paradise/fogonero.png";
 import Opiniones from "../components/opiniones.astro";
 import Mapa from "../components/Mapa.astro";
 import ReelIg from "../components/reel-ig.astro";
-
+import CabanaCard from "../components/CabanaCard.astro";
+import ButtonLink from "../components/ui/ButtonLink.astro";
+import { getCabanas } from "../data/cabanas";
+import { site } from "../lib/site";
 const reels = [
-  {
-    url: "https://www.instagram.com/reel/DDe7CMVR5dP/?igsh=YWFkdGR5bWlhbGo5",
-    version: "14",
-    containerClass: "flex flex-block justify-center items-center",
-  },
-  {
-    url: "https://www.instagram.com/reel/DFX84JUR3G_/?igsh=MWNjendxdmk5NWltZQ==",
-    version: "14",
-    containerClass: "flex flex-block justify-center items-center",
-  },
-  {
-    url: "https://www.instagram.com/reel/CzYaTLPrh3e/?igsh=dDg5ZmlyZnlpM29v",
-    version: "14",
-    containerClass: "flex flex-block justify-center items-center",
-  },
+  "https://www.instagram.com/reel/DDe7CMVR5dP/",
+  "https://www.instagram.com/reel/DFX84JUR3G_/",
+  "https://www.instagram.com/reel/CzYaTLPrh3e/",
 ];
 ---
 
 <Layout>
   <Hero />
-  <Features />
-  <div class="flex flex-row flex-wrap gap-4 justify-around items-center mb-8">
-    {
-      reels.map((reel) => (
-        <ReelIg
-          url={reel.url}
-          version={reel.version}
-          containerClass={reel.containerClass}
-        />
-      ))
-    }
-  </div>
-  <section
-    class="grid grid-cols-1 md:grid-cols-2 items-center justify-center md:p-12 md:gap-4 md:h-screen"
-  >
-    <div class="h-full w-full overflow-hidden">
+  <section id="cabanas" class="section-space page-container">
+    <div class="mb-9 flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
+      <div>
+        <p class="eyebrow mb-4">Tres formas de quedarse</p>
+        <h2 class="section-title">Encontrá tu lugar.</h2>
+        <p class="section-copy mt-4 max-w-xl">
+          De a dos, en familia o con amigos. Una cabaña para cada escapada.
+        </p>
+      </div>
+      <ButtonLink
+        href="/cabanas"
+        variant="outline"
+        class="self-start sm:self-auto"
+      >
+        Ver todas las cabañas
+        <ArrowUpRight size={16} aria-hidden="true" />
+      </ButtonLink>
+    </div>
+    <div class="grid gap-6 md:grid-cols-3">
+      {getCabanas().map((cabana) => (
+        <CabanaCard cabana={cabana} />
+      ))}
+    </div>
+  </section>
+  <section id="experiencia" class="page-container pb-16 md:pb-24">
+    <div class="grid overflow-hidden rounded-2xl bg-secondary lg:grid-cols-2">
       <Image
         src={fogonero}
-        alt="Fogonero"
-        class="h-full w-full object-cover"
-        loading="eager"
-        decoding="sync"
+        width={1200}
+        alt="Fogonero y jardín de uso común en Paradise"
+        class="aspect-[4/3] size-full object-cover lg:aspect-auto lg:min-h-[520px]"
+        widths={[600, 900, 1200]}
+        sizes="(max-width: 1023px) 100vw, 50vw"
+        loading="lazy"
       />
+      <div class="flex flex-col items-start justify-center p-7 sm:p-10 lg:p-14">
+        <p class="eyebrow mb-5">La vida en Paradise</p>
+        <h2 class="section-title">
+          Un jardín.
+          <br />
+          Un fogón.
+          <br />
+          Tiempo para vos.
+        </h2>
+        <p class="section-copy mt-6">
+          Un jardín con plantas y árboles, una parrilla y el fogonero para
+          compartir. Un lugar para disfrutar al aire libre y dejar que el día
+          pase sin apuro.
+        </p>
+        <p class="mt-4 text-base leading-relaxed text-muted-foreground">
+          Te recibimos con un trato cercano y un ambiente relajado y familiar.
+        </p>
+        <ButtonLink
+          href={site.whatsapp}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-7"
+        >
+          Planeá tu escapada
+          <ArrowUpRight size={16} aria-hidden="true" />
+        </ButtonLink>
+      </div>
     </div>
-    <p class="p-8 text-center text-xl md:text-3xl font-light">
-      El jardín de uso común con plantas, árboles, parrilla y fogonero, ofrece
-      un ambiente rodeado de naturaleza para disfrutar entre los huéspedes.
-      Nuestro propósito es brindar un trato cercano, un ambiente relajado y
-      familiar.
-    </p>
   </section>
+  <Features />
   <Opiniones />
+  <section class="section-space border-t bg-card">
+    <div class="page-container">
+      <div class="mb-9 flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
+        <div>
+          <p class="eyebrow mb-4">Postales de Paradise</p>
+          <h2 class="section-title">Un poquito de acá.</h2>
+        </div>
+        <ButtonLink
+          href={site.instagram}
+          target="_blank"
+          rel="noopener noreferrer"
+          variant="outline"
+          class="self-start"
+        >
+          <Camera size={16} aria-hidden="true" />
+          Seguinos en Instagram
+        </ButtonLink>
+      </div>
+      <div class="grid items-start gap-6 md:grid-cols-3">
+        {reels.map((url) => (
+          <ReelIg url={url} />
+        ))}
+      </div>
+    </div>
+  </section>
   <Mapa />
 </Layout>

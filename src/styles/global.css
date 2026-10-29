@@ -1,49 +1,125 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
-@theme {
-  --font-family-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+@theme inline {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: #b42318;
+  --color-border: var(--border);
+  --color-input: var(--border);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
 
-  --animate-fade-in-bottom: fade-in-bottom 1s ease-out forwards;
-  --animate-fade-in-top: fade-in-top 1s ease-out forwards;
+:root {
+  --background: #faf9f6;
+  --foreground: #262923;
+  --card: #ffffff;
+  --card-foreground: #262923;
+  --popover: #ffffff;
+  --popover-foreground: #262923;
+  --primary: #303b30;
+  --primary-foreground: #ffffff;
+  --secondary: #efeee7;
+  --secondary-foreground: #303b30;
+  --muted: #f1f0eb;
+  --muted-foreground: #62665d;
+  --accent: #e9ede5;
+  --accent-foreground: #303b30;
+  --border: #dedfd6;
+  --ring: #697e62;
+  --radius: 0.75rem;
+}
 
-  @keyframes fade-in-bottom {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+@layer base {
+  * {
+    @apply border-border;
   }
-
-  @keyframes fade-in-top {
-    from {
-      opacity: 0;
-      transform: translateY(-30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+  }
+  body {
+    @apply m-0 bg-background font-sans text-foreground antialiased;
+  }
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]) {
+    cursor: pointer;
+  }
+  a,
+  button,
+  summary {
+    @apply focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring;
+  }
+  ::selection {
+    background: #dce5d6;
+    color: #262923;
   }
 }
 
-/* Underline animation */
-.underline-slide {
-  @apply relative inline-block;
+@layer components {
+  .page-container {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
+  }
+  .section-space {
+    @apply py-16 md:py-24;
+  }
+  .eyebrow {
+    @apply text-xs font-medium uppercase tracking-[0.18em] text-muted-foreground;
+  }
+  .section-title {
+    @apply text-3xl font-medium leading-tight tracking-tight sm:text-4xl lg:text-5xl;
+  }
+  .section-copy {
+    @apply text-base leading-relaxed text-muted-foreground md:text-lg;
+  }
+  [data-slot="button"] {
+    transition:
+      background-color 160ms ease,
+      color 160ms ease,
+      transform 160ms ease;
+  }
+  [data-slot="button"]:active:not(:disabled) {
+    transform: scale(0.98);
+  }
 }
 
-.underline-slide::after {
-  @apply absolute w-full h-px bottom-0 left-0 bg-current;
-  content: "";
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.3s ease-in-out, transform-origin 0s 0.3s;
-}
-
-.underline-slide:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-  transition: transform 0.3s ease-in-out, transform-origin 0s;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  [data-slot="button"]:active:not(:disabled) {
+    transform: none;
+  }
 }
