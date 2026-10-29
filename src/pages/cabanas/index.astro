@@ -1,78 +1,53 @@
 ---
-import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
+import CabanaCard from "../../components/CabanaCard.astro";
+import ButtonLink from "../../components/ui/ButtonLink.astro";
+import { ArrowUpRight } from "@lucide/astro";
 import { getCabanas } from "../../data/cabanas";
-
-const cabanas = getCabanas();
+import { site } from "../../lib/site";
 ---
 
-<Layout>
-  <section class="py-24 px-4 md:px-8">
-    <div class="max-w-7xl mx-auto">
-      <h1 class="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-4">
-        Nuestras Cabañas
-      </h1>
-      <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-        Descubre nuestras cómodas cabañas en Chapadmalal, perfectas para tu
-        escapada.
-      </p>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {
-          cabanas.map((cabana) => (
-            <a
-              href={`/cabanas/${cabana.slug.current}`}
-              class="group block bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-            >
-              {cabana.portada && (
-                <div class="aspect-square overflow-hidden">
-                  <Image
-                    src={cabana.portada}
-                    alt={`Portada de ${cabana.nombre}`}
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    loading="lazy"
-                    widths={[400, 600, 800]}
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-                </div>
-              )}
-              <div class="p-6">
-                <div class="flex justify-between items-center">
-                  <h2 class="text-2xl font-semibold text-gray-800 mb-2">
-                    {cabana.nombre}
-                  </h2>
-                  <p class="text-gray-600 flex items-center gap-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
-                    </svg>
-                    {cabana.capacidad}
-                  </p>
-                </div>
-                <div class="mt-4 text-blue-600 group-hover:text-blue-700 font-medium flex items-center gap-2">
-                  Ver más
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 group-hover:translate-x-1 transition-transform"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </a>
-          ))
-        }
+<Layout title="Nuestras cabañas | Paradise Chapadmalal">
+  <section class="page-container section-space">
+    <p class="eyebrow mb-5">Paradise Chapadmalal</p>
+    <div class="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+      <div>
+        <h1 class="section-title">
+          Tu próxima escapada,
+          <br />
+          un poco más cerca.
+        </h1>
+        <p class="section-copy mt-5 max-w-xl">
+          Tres cabañas entre el campo y el mar. Elegí con quién venir, nosotros
+          te esperamos.
+        </p>
       </div>
+      <p class="flex items-center gap-2 text-sm text-muted-foreground">
+        <span class="size-2 rounded-full bg-primary"></span>Cabañas para 2, 4 y
+        6 personas
+      </p>
+    </div>
+    <div class="grid gap-6 md:grid-cols-3">
+      {getCabanas().map((cabana) => (
+        <CabanaCard cabana={cabana} heading="h2" />
+      ))}
+    </div>
+    <div class="mt-12 flex flex-col justify-between gap-5 rounded-xl border bg-secondary/50 p-6 sm:flex-row sm:items-center sm:p-8">
+      <div>
+        <h2 class="text-xl font-medium tracking-tight">Te ayudamos a elegir</h2>
+        <p class="mt-2 text-sm text-muted-foreground">
+          Contanos cuántos vienen y en qué fechas querés visitarnos.
+        </p>
+      </div>
+      <ButtonLink
+        href={site.whatsapp}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="self-start sm:shrink-0"
+      >
+        Consultar disponibilidad
+        <ArrowUpRight size={16} aria-hidden="true" />
+      </ButtonLink>
     </div>
   </section>
 </Layout>

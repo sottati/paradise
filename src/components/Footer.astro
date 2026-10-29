@@ -1,149 +1,132 @@
 ---
 import { Image } from "astro:assets";
-import logo from "../assets/paradiseiso.png";
-
+import { ArrowUpRight, Camera } from "@lucide/astro";
+import logo from "../assets/paradiseicon.png";
+import ButtonLink from "./ui/ButtonLink.astro";
+import { Separator } from "./ui/separator";
+import { cabinLinks, site } from "../lib/site";
 const currentYear = new Date().getFullYear();
-
-// Datos de contacto
-const contactLinks = [
-  {
-    label: "Whatsapp",
-    href: "https://wa.link/ob3h9i",
-    external: true,
-  },
-];
-
-// Enlaces rápidos
-const quickLinks = [
-  {
-    label: "Inicio",
-    href: "/",
-    external: false,
-  },
-  {
-    label: "Cabañas",
-    href: "/cabanas",
-    external: false,
-  },
-  {
-    label: "Casa Paradise",
-    href: "/cabanas/casa-paradise",
-    external: false,
-  },
-  {
-    label: "Rincón",
-    href: "/cabanas/rincon",
-    external: false,
-  },
-  {
-    label: "Del Mar",
-    href: "/cabanas/del-mar",
-    external: false,
-  },
-  {
-    label: "Ubicación",
-    href: "https://www.google.com/maps/place/Caba%C3%B1as+Paradise+Chapadmalal/@-38.1759253,-57.6533759,17z/data=!4m8!3m7!1s0x95851d1592f6455b:0x4565673369ada6ae!8m2!3d-38.1759253!4d-57.6533759!9m1!1b1!16s%2Fg%2F11hf4gg4_f",
-    external: true,
-  },
-];
-
-// Redes sociales
-const socialLinks = [
-  {
-    name: "Instagram",
-    href: "https://www.instagram.com/paradisechapadmalal/",
-    icon: "instagram",
-  },
-];
 ---
 
-<footer class="bg-gray-900 text-white py-12 px-4 md:px-8">
-  <div class="max-w-7xl mx-auto">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-      <!-- Logo y descripción -->
-      <div class="flex flex-col items-center md:items-start">
-        <Image
-          src={logo}
-          alt="Paradise Chapadmalal Logo"
-          class="w-32 h-32 mb-4"
-        />
-        <p class="text-gray-400 text-sm text-center md:text-left">
-          Cabañas Paradise Chapadmalal
+<footer class="bg-primary text-primary-foreground">
+  <div class="page-container pb-7 pt-14 md:pt-20">
+    <div class="mb-12 flex flex-col justify-between gap-7 sm:flex-row sm:items-end">
+      <div>
+        <p class="mb-4 text-xs uppercase tracking-[0.18em] text-white/70">
+          La próxima puede ser tu escapada
         </p>
-        <p class="text-gray-400 text-xs mt-2 text-center md:text-left">
-          EST. 2019
+        <h2 class="text-3xl font-medium tracking-tight md:text-4xl">
+          Hacete un lugar para descansar.
+        </h2>
+      </div>
+      <ButtonLink
+        href={site.whatsapp}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="self-start bg-background text-foreground hover:bg-white sm:shrink-0"
+        size="lg"
+      >
+        Escribinos
+        <ArrowUpRight size={17} aria-hidden="true" />
+      </ButtonLink>
+    </div>
+    <Separator className="bg-white/20" />
+    <div class="grid gap-10 py-10 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr]">
+      <div>
+        <a href="/" class="inline-flex items-center gap-3">
+          <Image
+            src={logo}
+            alt=""
+            width={44}
+            height={44}
+            class="size-11 rounded-full bg-background p-1"
+          />
+          <span>
+            <span class="block text-xl font-medium tracking-tight">
+              paradise
+            </span>
+            <span class="text-xs text-white/70">Chapadmalal · Desde 2019</span>
+          </span>
+        </a>
+        <p class="mt-5 max-w-xs text-sm leading-relaxed text-white/70">
+          Cabañas de mar. Un lugar para disfrutar con familia y amigos.
         </p>
       </div>
-
-      <!-- Contacto -->
       <div>
-        <h3 class="text-lg font-semibold mb-4">Contacto</h3>
-        <ul class="space-y-2 text-gray-400 text-sm">
-          {
-            contactLinks.map((link) => (
-              <li>
-                <a
-                  href={link.href}
-                  target={link.external ? "_blank" : undefined}
-                  rel={link.external ? "noopener noreferrer" : undefined}
-                  class="hover:text-white transition-colors"
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))
-          }
+        <h3 class="mb-4 text-sm font-medium">Las cabañas</h3>
+        <ul class="space-y-3 text-sm text-white/75">
+          {cabinLinks.map((link) => (
+            <li>
+              <a href={link.href} class="hover:text-white">
+                {link.label}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
-
-      <!-- Enlaces rápidos -->
       <div>
-        <h3 class="text-lg font-semibold mb-4">Enlaces</h3>
-        <ul class="space-y-2 text-gray-400 text-sm">
-          {
-            quickLinks.map((link) => (
-              <li>
-                <a
-                  href={link.href}
-                  target={link.external ? "_blank" : undefined}
-                  rel={link.external ? "noopener noreferrer" : undefined}
-                  class="hover:text-white transition-colors"
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))
-          }
+        <h3 class="mb-4 text-sm font-medium">Conocé Paradise</h3>
+        <ul class="space-y-3 text-sm text-white/75">
+          <li>
+            <a href="/cabanas" class="hover:text-white">
+              Todas las cabañas
+            </a>
+          </li>
+          <li>
+            <a href="/#experiencia" class="hover:text-white">
+              La experiencia
+            </a>
+          </li>
+          <li>
+            <a href="/#ubicacion" class="hover:text-white">
+              Ubicación
+            </a>
+          </li>
         </ul>
       </div>
-
-      <!-- Redes Sociales -->
       <div>
-        <h3 class="text-lg font-semibold mb-4">Redes Sociales</h3>
-        <ul class="space-y-2 text-gray-400 text-sm">
-          {
-            socialLinks.map((social) => (
-              <li>
-                <a
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="hover:text-white transition-colors"
-                >
-                  {social.name}
-                </a>
-              </li>
-            ))
-          }
+        <h3 class="mb-4 text-sm font-medium">Seguimos en contacto</h3>
+        <ul class="space-y-3 text-sm text-white/75">
+          <li>
+            <a
+              href={site.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-white"
+            >
+              WhatsApp
+            </a>
+          </li>
+          <li>
+            <a
+              href={site.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 hover:text-white"
+            >
+              <Camera size={15} aria-hidden="true" />
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a
+              href={site.maps}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-white"
+            >
+              Cómo llegar
+            </a>
+          </li>
         </ul>
       </div>
     </div>
-
-    <!-- Copyright -->
-    <div class="border-t border-gray-800 pt-8 text-center">
-      <p class="text-gray-400 text-sm">
+    <Separator className="bg-white/20" />
+    <div class="flex flex-col justify-between gap-3 pt-6 text-xs text-white/65 sm:flex-row">
+      <p>
         © {currentYear} Paradise Chapadmalal. Todos los derechos reservados.
       </p>
+      <p>Chapadmalal, Buenos Aires, Argentina</p>
     </div>
   </div>
 </footer>

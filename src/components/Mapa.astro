@@ -1,24 +1,49 @@
 ---
-// Componente de mapa de Google Maps
+import { MapPin, ArrowUpRight } from "@lucide/astro";
+import ButtonLink from "./ui/ButtonLink.astro";
+import { site } from "../lib/site";
 ---
 
-<section class="w-full py-16 px-4 md:px-8 bg-gray-50">
-  <div class="max-w-7xl mx-auto">
-    <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">
-      Nuestra Ubicación
-    </h2>
-    <div
-      class="w-full md:aspect-video aspect-square rounded-xl shadow-lg overflow-hidden"
-    >
+<section id="ubicacion" class="section-space border-t bg-secondary/40">
+  <div class="page-container grid items-center gap-10 lg:grid-cols-[0.8fr_1.5fr] lg:gap-16">
+    <div>
+      <p class="eyebrow mb-4">Entre el campo y el mar</p>
+      <h2 class="section-title">
+        Nos vemos
+        <br />
+        en Chapa.
+      </h2>
+      <p class="section-copy mt-5">
+        Naturaleza, playa y unos días para disfrutar a tu ritmo. Estamos en
+        Chapadmalal, Buenos Aires.
+      </p>
+      <p class="mt-6 flex items-center gap-2 text-sm">
+        <MapPin size={18} aria-hidden="true" />
+        Paradise Chapadmalal
+      </p>
+      <ButtonLink
+        href={site.maps}
+        target="_blank"
+        rel="noopener noreferrer"
+        variant="outline"
+        class="mt-7"
+      >
+        Cómo llegar
+        <ArrowUpRight size={16} aria-hidden="true" />
+      </ButtonLink>
+    </div>
+    <div class="aspect-square overflow-hidden rounded-xl border bg-muted sm:aspect-[4/3]">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3136.462685327735!2d-57.65337590000001!3d-38.175925299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95851d1592f6455b%3A0x4565673369ada6ae!2sCaba%C3%B1as%20Paradise%20Chapadmalal!5e0!3m2!1ses-419!2sar!4v1761052904377!5m2!1ses-419!2sar"
+        title="Ubicación de Cabañas Paradise Chapadmalal en Google Maps"
         width="100%"
         height="100%"
-        style="border:0;"
+        style="border:0"
         allowfullscreen
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
-        class="w-full h-full"></iframe>
+        class="size-full"
+      ></iframe>
     </div>
   </div>
 </section>
