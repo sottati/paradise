@@ -1,0 +1,2408 @@
+{
+  "date": "2026-10-29",
+  "site": "https://paradisechapadmalal.com",
+  "method": "Chromium via T3 preview; CSS viewports, no CPU or network throttling; first desktop navigation timing only; axe-core 4.10.3, third-party frame internals excluded; HEAD assets; no messages sent",
+  "home": {
+    "url": "https://paradisechapadmalal.com/",
+    "title": "Paradise Chapadmalal",
+    "lang": "en",
+    "viewport": {
+      "w": 1280,
+      "h": 800,
+      "scrollWidth": 1280
+    },
+    "headers": {
+      "access-control-allow-origin": "*",
+      "age": "62200",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "content-disposition": "inline",
+      "content-encoding": "br",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Thu, 29 Oct 2026 22:06:51 GMT",
+      "etag": "W/\"6a66061a42600d19002893f0104531f9\"",
+      "last-modified": "Thu, 29 Oct 2026 04:49:43 GMT",
+      "server": "Vercel",
+      "x-vercel-cache": "HIT",
+      "x-vercel-id": "gru1::5hxpx-1793311611983-3042962351be"
+    },
+    "navigation": [
+      {
+        "name": "https://paradisechapadmalal.com/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 3564.5999994277954,
+        "navigationId": 5248,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "h2",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "br",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0.09999942779541016,
+        "domainLookupStart": 1.7999992370605469,
+        "domainLookupEnd": 201.29999923706055,
+        "connectStart": 201.29999923706055,
+        "secureConnectionStart": 215.19999980926514,
+        "connectEnd": 354.5,
+        "requestStart": 354.79999923706055,
+        "responseStart": 396.3999996185303,
+        "firstInterimResponseStart": 396.3999996185303,
+        "finalResponseHeadersStart": 407.79999923706055,
+        "responseEnd": 408.5999994277954,
+        "transferSize": 6283,
+        "encodedBodySize": 5983,
+        "decodedBodySize": 21770,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 418.69999980926514,
+        "domContentLoadedEventStart": 570.6999998092651,
+        "domContentLoadedEventEnd": 570.6999998092651,
+        "domComplete": 3564.5999994277954,
+        "loadEventStart": 3564.5999994277954,
+        "loadEventEnd": 3564.5999994277954,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {}
+      }
+    ],
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "Amenities"
+      },
+      {
+        "tag": "H3",
+        "text": "Servicios"
+      },
+      {
+        "tag": "H3",
+        "text": "Parrilla y Fogonero"
+      },
+      {
+        "tag": "H3",
+        "text": "Espacio cerrado"
+      },
+      {
+        "tag": "H3",
+        "text": "Wi-Fi"
+      },
+      {
+        "tag": "H3",
+        "text": "Smart TV"
+      },
+      {
+        "tag": "H3",
+        "text": "Facundo Mones Ruiz"
+      },
+      {
+        "tag": "H3",
+        "text": "Catalina Contepomi"
+      },
+      {
+        "tag": "H3",
+        "text": "Reed"
+      },
+      {
+        "tag": "H3",
+        "text": "Marcelo Valerio"
+      },
+      {
+        "tag": "H3",
+        "text": "Tahiel Tomasini"
+      },
+      {
+        "tag": "H3",
+        "text": "Joha Brauchler"
+      },
+      {
+        "tag": "H2",
+        "text": "Nuestra Ubicación"
+      },
+      {
+        "tag": "H3",
+        "text": "Contacto"
+      },
+      {
+        "tag": "H3",
+        "text": "Enlaces"
+      },
+      {
+        "tag": "H3",
+        "text": "Redes Sociales"
+      }
+    ],
+    "meta": [
+      "<meta charset=\"UTF-8\">",
+      "<meta name=\"viewport\" content=\"width=device-width\">",
+      "<meta name=\"generator\" content=\"Astro v5.14.6\">"
+    ],
+    "images": [
+      {
+        "src": "https://paradisechapadmalal.com/_astro/paradiseicon.Dj1BnRr5_1pVmXe.webp",
+        "alt": "Paradise Chapadmalal",
+        "loading": "lazy",
+        "priority": "auto",
+        "width": 1042,
+        "height": 1066,
+        "render": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "srcset": "",
+        "sizes": "",
+        "complete": false
+      },
+      {
+        "src": "https://paradisechapadmalal.com/_astro/paradiseicon.Dj1BnRr5_1pVmXe.webp",
+        "alt": "Paradise Chapadmalal",
+        "loading": "lazy",
+        "priority": "auto",
+        "width": 1042,
+        "height": 1066,
+        "render": {
+          "x": 619.9921875,
+          "y": 12,
+          "width": 40,
+          "height": 40
+        },
+        "srcset": "",
+        "sizes": "",
+        "complete": true
+      },
+      {
+        "src": "https://paradisechapadmalal.com/_astro/portada.DjAerQsp_Z1zSvew.webp",
+        "alt": "Portada",
+        "loading": "lazy",
+        "priority": "auto",
+        "width": 4032,
+        "height": 5376,
+        "render": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 800
+        },
+        "srcset": "",
+        "sizes": "",
+        "complete": true
+      },
+      {
+        "src": "https://paradisechapadmalal.com/_astro/fogonero.kNVqNvtf_9Gapn.webp",
+        "alt": "Fogonero",
+        "loading": "eager",
+        "priority": "auto",
+        "width": 4032,
+        "height": 5376,
+        "render": {
+          "x": 48,
+          "y": 2223,
+          "width": 584,
+          "height": 704
+        },
+        "srcset": "",
+        "sizes": "",
+        "complete": true
+      },
+      {
+        "src": "",
+        "alt": "Paradise Chapadmalal Logo",
+        "loading": "lazy",
+        "priority": "auto",
+        "width": 0,
+        "height": 0,
+        "render": {
+          "x": 32,
+          "y": 4834,
+          "width": 128,
+          "height": 128
+        },
+        "srcset": "",
+        "sizes": "",
+        "complete": false
+      }
+    ],
+    "scripts": [
+      {
+        "src": "",
+        "type": "module",
+        "bytes": 585
+      },
+      {
+        "src": "https://www.instagram.com/embed.js",
+        "type": "",
+        "bytes": 0
+      },
+      {
+        "src": "https://www.instagram.com/embed.js",
+        "type": "",
+        "bytes": 0
+      },
+      {
+        "src": "https://www.instagram.com/embed.js",
+        "type": "",
+        "bytes": 0
+      }
+    ],
+    "iframes": [
+      {
+        "src": "https://www.instagram.com/reel/DDe7CMVR5dP/embed/?cr=1&v=14&rd=https%3A%2F%2Fparadisechapadmalal.com&rp=%2F#%7B%22ci%22%3A0%2C%22os%22%3A874.5%2C%22ls%22%3A412.69999980926514%2C%22le%22%3A764.5999994277954%7D",
+        "title": "",
+        "loading": "auto",
+        "rect": {
+          "x": 45,
+          "y": 1518,
+          "width": 326,
+          "height": 613
+        }
+      },
+      {
+        "src": "https://www.instagram.com/reel/DFX84JUR3G_/embed/?cr=1&v=14&rd=https%3A%2F%2Fparadisechapadmalal.com&rp=%2F#%7B%22ci%22%3A1%2C%22os%22%3A876.8999996185303%2C%22ls%22%3A412.69999980926514%2C%22le%22%3A764.5999994277954%7D",
+        "title": "",
+        "loading": "auto",
+        "rect": {
+          "x": 477,
+          "y": 1518,
+          "width": 326,
+          "height": 613
+        }
+      },
+      {
+        "src": "https://www.instagram.com/reel/CzYaTLPrh3e/embed/?cr=1&v=14&rd=https%3A%2F%2Fparadisechapadmalal.com&rp=%2F#%7B%22ci%22%3A2%2C%22os%22%3A877.6999998092651%2C%22ls%22%3A412.69999980926514%2C%22le%22%3A764.5999994277954%7D",
+        "title": "",
+        "loading": "auto",
+        "rect": {
+          "x": 909,
+          "y": 1518,
+          "width": 326,
+          "height": 613
+        }
+      },
+      {
+        "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3136.462685327735!2d-57.65337590000001!3d-38.175925299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95851d1592f6455b%3A0x4565673369ada6ae!2sCaba%C3%B1as%20Paradise%20Chapadmalal!5e0!3m2!1ses-419!2sar!4v1761052904377!5m2!1ses-419!2sar",
+        "title": "",
+        "loading": "lazy",
+        "rect": {
+          "x": 32,
+          "y": 4038,
+          "width": 1216,
+          "height": 684
+        }
+      }
+    ],
+    "links": [
+      {
+        "text": "",
+        "href": "https://paradisechapadmalal.com/",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "text": "Casa Paradise",
+        "href": "https://paradisechapadmalal.com/cabanas/casa-paradise",
+        "rect": {
+          "x": 32,
+          "y": 20,
+          "width": 107.5,
+          "height": 24
+        }
+      },
+      {
+        "text": "Rincón",
+        "href": "https://paradisechapadmalal.com/cabanas/rincon",
+        "rect": {
+          "x": 163.5,
+          "y": 20,
+          "width": 51,
+          "height": 24
+        }
+      },
+      {
+        "text": "Del Mar",
+        "href": "https://paradisechapadmalal.com/cabanas/del-mar",
+        "rect": {
+          "x": 238.5,
+          "y": 20,
+          "width": 58.5,
+          "height": 24
+        }
+      },
+      {
+        "text": "",
+        "href": "https://paradisechapadmalal.com/",
+        "rect": {
+          "x": 619.9921875,
+          "y": 12,
+          "width": 40,
+          "height": 40
+        }
+      },
+      {
+        "text": "Contactanos",
+        "href": "https://wa.link/ob3h9i",
+        "rect": {
+          "x": 1153,
+          "y": 20,
+          "width": 95,
+          "height": 24
+        }
+      },
+      {
+        "text": "Inicio",
+        "href": "https://paradisechapadmalal.com/",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "text": "Cabañas",
+        "href": "https://paradisechapadmalal.com/cabanas",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "text": "Casa Paradise",
+        "href": "https://paradisechapadmalal.com/cabanas/casa-paradise",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "text": "Rincón",
+        "href": "https://paradisechapadmalal.com/cabanas/rincon",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "text": "Del Mar",
+        "href": "https://paradisechapadmalal.com/cabanas/del-mar",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "text": "Contactanos",
+        "href": "https://wa.link/ob3h9i",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        }
+      },
+      {
+        "text": "4.7   ★ ★ ★ ★  ★ ★   64 opiniones en Google Maps",
+        "href": "https://www.google.com/maps/place/Caba%C3%B1as+Paradise+Chapadmalal/@-38.1759253,-57.6533759,17z/data=!4m8!3m7!1s0x95851d1592f6455b:0x4565673369ada6ae!8m2!3d-38.1759253!4d-57.6533759!9m1!1b1!16s%2Fg%2F11hf4gg4_f?entry=ttu&g_ep=EgoyMDI1MTAxNC4wIKXMDSoASAFQAw%3D%3D",
+        "rect": {
+          "x": 32,
+          "y": 3039,
+          "width": 1216,
+          "height": 56
+        }
+      },
+      {
+        "text": "Whatsapp",
+        "href": "https://wa.link/ob3h9i",
+        "rect": {
+          "x": 344,
+          "y": 4879.5,
+          "width": 67.5,
+          "height": 17
+        }
+      },
+      {
+        "text": "Inicio",
+        "href": "https://paradisechapadmalal.com/",
+        "rect": {
+          "x": 656,
+          "y": 4879.5,
+          "width": 36,
+          "height": 17
+        }
+      },
+      {
+        "text": "Cabañas",
+        "href": "https://paradisechapadmalal.com/cabanas",
+        "rect": {
+          "x": 656,
+          "y": 4907.5,
+          "width": 58.5,
+          "height": 17
+        }
+      },
+      {
+        "text": "Casa Paradise",
+        "href": "https://paradisechapadmalal.com/cabanas/casa-paradise",
+        "rect": {
+          "x": 656,
+          "y": 4935.5,
+          "width": 95.5,
+          "height": 17
+        }
+      },
+      {
+        "text": "Rincón",
+        "href": "https://paradisechapadmalal.com/cabanas/rincon",
+        "rect": {
+          "x": 656,
+          "y": 4963.5,
+          "width": 46,
+          "height": 17
+        }
+      },
+      {
+        "text": "Del Mar",
+        "href": "https://paradisechapadmalal.com/cabanas/del-mar",
+        "rect": {
+          "x": 656,
+          "y": 4991.5,
+          "width": 51.5,
+          "height": 17
+        }
+      },
+      {
+        "text": "Ubicación",
+        "href": "https://www.google.com/maps/place/Caba%C3%B1as+Paradise+Chapadmalal/@-38.1759253,-57.6533759,17z/data=!4m8!3m7!1s0x95851d1592f6455b:0x4565673369ada6ae!8m2!3d-38.1759253!4d-57.6533759!9m1!1b1!16s%2Fg%2F11hf4gg4_f",
+        "rect": {
+          "x": 656,
+          "y": 5019.5,
+          "width": 67,
+          "height": 17
+        }
+      },
+      {
+        "text": "Instagram",
+        "href": "https://www.instagram.com/paradisechapadmalal/",
+        "rect": {
+          "x": 968,
+          "y": 4879.5,
+          "width": 67,
+          "height": 17
+        }
+      }
+    ],
+    "resources": [
+      {
+        "name": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap",
+        "type": "link",
+        "start": 412.5999994277954,
+        "duration": 148.9000005722046,
+        "transfer": 1114,
+        "encoded": 814,
+        "decoded": 14826
+      },
+      {
+        "name": "https://paradisechapadmalal.com/_astro/_slug_.IxwI2vqK.css",
+        "type": "link",
+        "start": 412.69999980926514,
+        "duration": 155,
+        "transfer": 5540,
+        "encoded": 5240,
+        "decoded": 24464
+      },
+      {
+        "name": "https://www.instagram.com/embed.js",
+        "type": "script",
+        "start": 412.69999980926514,
+        "duration": 351.8999996185303,
+        "transfer": 21555,
+        "encoded": 21255,
+        "decoded": 59734
+      },
+      {
+        "name": "https://paradisechapadmalal.com/_astro/fogonero.kNVqNvtf_9Gapn.webp",
+        "type": "img",
+        "start": 412.79999923706055,
+        "duration": 204.5,
+        "transfer": 3097428,
+        "encoded": 3097128,
+        "decoded": 3097128
+      },
+      {
+        "name": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3136.462685327735!2d-57.65337590000001!3d-38.175925299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95851d1592f6455b%3A0x4565673369ada6ae!2sCaba%C3%B1as%20Paradise%20Chapadmalal!5e0!3m2!1ses-419!2sar!4v1761052904377!5m2!1ses-419!2sar",
+        "type": "iframe",
+        "start": 417.69999980926514,
+        "duration": 1057.1999998092651,
+        "transfer": 0,
+        "encoded": 0,
+        "decoded": 0
+      },
+      {
+        "name": "https://paradisechapadmalal.com/_astro/paradiseicon.Dj1BnRr5_1pVmXe.webp",
+        "type": "img",
+        "start": 609.8999996185303,
+        "duration": 111.69999980926514,
+        "transfer": 29514,
+        "encoded": 29214,
+        "decoded": 29214
+      },
+      {
+        "name": "https://paradisechapadmalal.com/_astro/portada.DjAerQsp_Z1zSvew.webp",
+        "type": "img",
+        "start": 609.8999996185303,
+        "duration": 231.19999980926514,
+        "transfer": 4151706,
+        "encoded": 4151406,
+        "decoded": 4151406
+      },
+      {
+        "name": "https://www.instagram.com/reel/DDe7CMVR5dP/embed/?cr=1&v=14&rd=https%3A%2F%2Fparadisechapadmalal.com&rp=%2F#%7B%22ci%22%3A0%2C%22os%22%3A874.5%2C%22ls%22%3A412.69999980926514%2C%22le%22%3A764.5999994277954%7D",
+        "type": "iframe",
+        "start": 875.1999998092651,
+        "duration": 1086.1999998092651,
+        "transfer": 0,
+        "encoded": 0,
+        "decoded": 0
+      },
+      {
+        "name": "https://www.instagram.com/reel/DFX84JUR3G_/embed/?cr=1&v=14&rd=https%3A%2F%2Fparadisechapadmalal.com&rp=%2F#%7B%22ci%22%3A1%2C%22os%22%3A876.8999996185303%2C%22ls%22%3A412.69999980926514%2C%22le%22%3A764.5999994277954%7D",
+        "type": "iframe",
+        "start": 877,
+        "duration": 1224.5999994277954,
+        "transfer": 0,
+        "encoded": 0,
+        "decoded": 0
+      },
+      {
+        "name": "https://www.instagram.com/reel/CzYaTLPrh3e/embed/?cr=1&v=14&rd=https%3A%2F%2Fparadisechapadmalal.com&rp=%2F#%7B%22ci%22%3A2%2C%22os%22%3A877.6999998092651%2C%22ls%22%3A412.69999980926514%2C%22le%22%3A764.5999994277954%7D",
+        "type": "iframe",
+        "start": 877.6999998092651,
+        "duration": 2686.800000190735,
+        "transfer": 0,
+        "encoded": 0,
+        "decoded": 0
+      }
+    ]
+  },
+  "routes": {
+    "pages": [
+      {
+        "path": "/cabanas",
+        "status": 200,
+        "url": "https://paradisechapadmalal.com/cabanas",
+        "headers": {
+          "access-control-allow-origin": "*",
+          "age": "0",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-disposition": "inline; filename=\"cabanas\"",
+          "content-encoding": "br",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Thu, 29 Oct 2026 22:07:05 GMT",
+          "etag": "W/\"b0664bb2666bf990d92a614f6ed7da6a\"",
+          "last-modified": "Thu, 29 Oct 2026 22:07:05 GMT",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "x-vercel-cache": "HIT",
+          "x-vercel-id": "gru1::t5gfs-1793311625703-7e75091c540f"
+        },
+        "title": "Paradise Chapadmalal",
+        "lang": "en",
+        "h1": [
+          "Nuestras Cabañas"
+        ],
+        "description": null,
+        "canonical": null,
+        "og": 0,
+        "schema": 0,
+        "images": [
+          {
+            "src": "/_astro/paradiseicon.Dj1BnRr5_1pVmXe.webp",
+            "srcset": "",
+            "loading": "lazy",
+            "alt": "Paradise Chapadmalal"
+          },
+          {
+            "src": "/_astro/paradiseicon.Dj1BnRr5_1pVmXe.webp",
+            "srcset": "",
+            "loading": "lazy",
+            "alt": "Paradise Chapadmalal"
+          },
+          {
+            "src": "/_astro/portada.DjAerQsp_Z1zSvew.webp",
+            "srcset": "/_astro/portada.DjAerQsp_Z2mB9Ll.webp 400w, /_astro/portada.DjAerQsp_NbXBE.webp 600w, /_astro/portada.DjAerQsp_Z1jCb2S.webp 800w",
+            "loading": "lazy",
+            "alt": "Portada de Casa Paradise"
+          },
+          {
+            "src": "/_astro/delmar.sj57AwMP_Z1Rg1M0.webp",
+            "srcset": "/_astro/delmar.sj57AwMP_d5aHB.webp 400w, /_astro/delmar.sj57AwMP_2ksOd.webp 600w, /_astro/delmar.sj57AwMP_1MJeGL.webp 800w",
+            "loading": "lazy",
+            "alt": "Portada de Del Mar"
+          },
+          {
+            "src": "/_astro/01rincon.i2Nn-vWJ_xmUzt.webp",
+            "srcset": "/_astro/01rincon.i2Nn-vWJ_Z1ozENH.webp 400w, /_astro/01rincon.i2Nn-vWJ_Z1xVvRz.webp 600w, /_astro/01rincon.i2Nn-vWJ_1CNdgC.webp 800w",
+            "loading": "lazy",
+            "alt": "Portada de Rincón"
+          },
+          {
+            "src": "/_astro/paradiseiso.BJxsr27d_ZHuWHW.webp",
+            "srcset": "",
+            "loading": "lazy",
+            "alt": "Paradise Chapadmalal Logo"
+          }
+        ],
+        "links": [
+          {
+            "text": "Casa Paradise      6 personas   \nVer más",
+            "href": "/cabanas/casa-paradise"
+          },
+          {
+            "text": "Del Mar      4 personas   \nVer más",
+            "href": "/cabanas/del-mar"
+          },
+          {
+            "text": "Rincón      2 personas   \nVer más",
+            "href": "/cabanas/rincon"
+          }
+        ],
+        "body": null
+      },
+      {
+        "path": "/cabanas/casa-paradise",
+        "status": 200,
+        "url": "https://paradisechapadmalal.com/cabanas/casa-paradise",
+        "headers": {
+          "access-control-allow-origin": "*",
+          "age": "0",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-disposition": "inline; filename=\"casa-paradise\"",
+          "content-encoding": "br",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Thu, 29 Oct 2026 22:07:05 GMT",
+          "etag": "W/\"f04b7b995f53fd8106121844452e29fe\"",
+          "last-modified": "Thu, 29 Oct 2026 22:07:05 GMT",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "x-vercel-cache": "HIT",
+          "x-vercel-id": "gru1::frlqt-1793311625712-5e3c9c486380"
+        },
+        "title": "Paradise Chapadmalal",
+        "lang": "en",
+        "h1": [
+          "Casa Paradise"
+        ],
+        "description": null,
+        "canonical": null,
+        "og": 0,
+        "schema": 0,
+        "images": [
+          {
+            "src": "/_astro/paradiseicon.Dj1BnRr5_1pVmXe.webp",
+            "srcset": "",
+            "loading": "lazy",
+            "alt": "Paradise Chapadmalal"
+          },
+          {
+            "src": "/_astro/paradiseicon.Dj1BnRr5_1pVmXe.webp",
+            "srcset": "",
+            "loading": "lazy",
+            "alt": "Paradise Chapadmalal"
+          },
+          {
+            "src": "/_astro/fogonero.kNVqNvtf_9Gapn.webp",
+            "srcset": "/_astro/fogonero.kNVqNvtf_ZqiUkG.webp 400w, /_astro/fogonero.kNVqNvtf_ZzELoy.webp 600w, /_astro/fogonero.kNVqNvtf_Z2t7b4i.webp 800w",
+            "loading": "eager",
+            "alt": "Casa Paradise - fogonero"
+          },
+          {
+            "src": "/_astro/IMG_2949.BvLGvpfo_Z2hIQSt.webp",
+            "srcset": "/_astro/IMG_2949.BvLGvpfo_1xjPbd.webp 200w, /_astro/IMG_2949.BvLGvpfo_Zl7ytw.webp 400w",
+            "loading": "lazy",
+            "alt": "Casa Paradise - IMG_2949"
+          },
+          {
+            "src": "/_astro/IMG_2953.ChuGoAA4_Z17d08a.webp",
+            "srcset": "/_astro/IMG_2953.ChuGoAA4_Z2lvOm1.webp 200w, /_astro/IMG_2953.ChuGoAA4_PdTMb.webp 400w",
+            "loading": "lazy",
+            "alt": "Casa Paradise - IMG_2953"
+          },
+          {
+            "src": "/_astro/IMG_2955.GJi-kp_c_Zx46P7.webp",
+            "srcset": "/_astro/IMG_2955.GJi-kp_c_Z2uo3CM.webp 200w, /_astro/IMG_2955.GJi-kp_c_GlFvp.webp 400w",
+            "loading": "lazy",
+            "alt": "Casa Paradise - IMG_2955"
+          },
+          {
+            "src": "/_astro/IMG_3877.B5kDviEG_cXsDa.webp",
+            "srcset": "/_astro/IMG_3877.B5kDviEG_18e9ES.webp 200w, /_astro/IMG_3877.B5kDviEG_ZKdeYQ.webp 400w",
+            "loading": "lazy",
+            "alt": "Casa Paradise - IMG_3877"
+          },
+          {
+            "src": "/_astro/IMG_5776.BXeFv4Zg_2uNBOX.webp",
+            "srcset": "/_astro/IMG_5776.BXeFv4Zg_21LhhP.webp 200w, /_astro/IMG_5776.BXeFv4Zg_8jRC6.webp 400w",
+            "loading": "lazy",
+            "alt": "Casa Paradise - IMG_5776"
+          },
+          {
+            "src": "/_astro/IMG_5851.R2oMC2q2_1slsNm.webp",
+            "srcset": "/_astro/IMG_5851.R2oMC2q2_bE604.webp 200w, /_astro/IMG_5851.R2oMC2q2_Z1GMiEF.webp 400w",
+            "loading": "lazy",
+            "alt": "Casa Paradise - IMG_5851"
+          },
+          {
+            "src": "/_astro/IMG_5859.BQZwK-Ld_aEwvc.webp",
+            "srcset": "/_astro/IMG_5859.BQZwK-Ld_189BkW.webp 200w, /_astro/IMG_5859.BQZwK-Ld_ZKhMjM.webp 400w",
+            "loading": "lazy",
+            "alt": "Casa Paradise - IMG_5859"
+          },
+          {
+            "src": "/_astro/IMG_5865.CBR53PFX_Z1mtTBr.webp",
+            "srcset": "/_astro/IMG_5865.CBR53PFX_1T9id1.webp 200w, /_astro/IMG_5865.CBR53PFX_GSxh.webp 400w",
+            "loading": "lazy",
+            "alt": "Casa Paradise - IMG_5865"
+          },
+          {
+            "src": "/_astro/IMG_5878.CxpuOKoO_Z1iHn9.webp",
+            "srcset": "/_astro/IMG_5878.CxpuOKoO_ZlhsEy.webp 200w, /_astro/IMG_5878.CxpuOKoO_Z2eIRki.webp 400w",
+            "loading": "lazy",
+            "alt": "Casa Paradise - IMG_5878"
+          },
+          {
+            "src": "/_astro/IMG_5883.2lcMbXCI_Z2trG9R.webp",
+            "srcset": "/_astro/IMG_5883.2lcMbXCI_3SfvB.webp 200w, /_astro/IMG_5883.2lcMbXCI_Z1Oy998.webp 400w",
+            "loading": "lazy",
+            "alt": "Casa Paradise - IMG_5883"
+          },
+          {
+            "src": "/_astro/portada.DjAerQsp_Z1zSvew.webp",
+            "srcset": "/_astro/portada.DjAerQsp_ZeM06N.webp 200w, /_astro/portada.DjAerQsp_Z2mB9Ll.webp 400w",
+            "loading": "lazy",
+            "alt": "Casa Paradise - portada"
+          },
+          {
+            "src": "/_astro/paradiseiso.BJxsr27d_ZHuWHW.webp",
+            "srcset": "",
+            "loading": "lazy",
+            "alt": "Paradise Chapadmalal Logo"
+          }
+        ],
+        "links": [
+          {
+            "text": "Consultar disponibilidad",
+            "href": "https://wa.link/ob3h9i"
+          }
+        ],
+        "body": "                            Casa Paradise  Rincón  Del Mar           \nContactanos\n         Inicio  Cabañas  Casa Paradise  Rincón  Del Mar  \nContactanos\n   const t=document.getElementById(\"mobile-menu-button\"),e=document.getElementById(\"mobile-menu\"),n=document.getElementById(\"menu-icon\"),s=document.getElementById(\"close-icon\");t?.addEventListener(\"click\",()=>{!e?.classList.contains(\"hidden\")?(e?.classList.add(\"hidden\"),n?.classList.remove(\"hidden\"),s?.classList.add(\"hidden\")):(e?.classList.remove(\"hidden\"),n?.classList.add(\"hidden\"),s?.classList.remove(\"hidden\"))});const i=e?.querySelectorAll(\"a\");i?.forEach(d=>{d.addEventListener(\"click\",()=>{e?.classList.add(\"hidden\"),n?.classList.remove(\"hidden\"),s?.classList.add(\"hidden\")})});        Casa Paradise      6 personas   \nConsultar disponibilidad\n                                                 \nCabañas Paradise Chapadmalal\n \nEST. 2019\n    Contacto    Whatsapp       Enlaces    Inicio    Cabañas    Casa Paradise    Rincón    Del Mar    Ubicación       Redes Sociales    Instagram        \n© 2025 Paradise Chapadmalal. Todos los derechos reservados.\n    "
+      },
+      {
+        "path": "/cabanas/del-mar",
+        "status": 200,
+        "url": "https://paradisechapadmalal.com/cabanas/del-mar",
+        "headers": {
+          "access-control-allow-origin": "*",
+          "age": "0",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-disposition": "inline; filename=\"del-mar\"",
+          "content-encoding": "br",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Thu, 29 Oct 2026 22:07:05 GMT",
+          "etag": "W/\"8c6dc0dba30b5c06f010a5bcb0a527d5\"",
+          "last-modified": "Thu, 29 Oct 2026 22:07:05 GMT",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "x-vercel-cache": "HIT",
+          "x-vercel-id": "gru1::sr5f6-1793311625720-99bc42259922"
+        },
+        "title": "Paradise Chapadmalal",
+        "lang": "en",
+        "h1": [
+          "Del Mar"
+        ],
+        "description": null,
+        "canonical": null,
+        "og": 0,
+        "schema": 0,
+        "images": [
+          {
+            "src": "/_astro/paradiseicon.Dj1BnRr5_1pVmXe.webp",
+            "srcset": "",
+            "loading": "lazy",
+            "alt": "Paradise Chapadmalal"
+          },
+          {
+            "src": "/_astro/paradiseicon.Dj1BnRr5_1pVmXe.webp",
+            "srcset": "",
+            "loading": "lazy",
+            "alt": "Paradise Chapadmalal"
+          },
+          {
+            "src": "/_astro/delmar.sj57AwMP_Z1Rg1M0.webp",
+            "srcset": "/_astro/delmar.sj57AwMP_d5aHB.webp 400w, /_astro/delmar.sj57AwMP_2ksOd.webp 600w, /_astro/delmar.sj57AwMP_1MJeGL.webp 800w",
+            "loading": "eager",
+            "alt": "Del Mar - delmar"
+          },
+          {
+            "src": "/_astro/IMG_6552.DHNxd_Wg_Z22YVq2.webp",
+            "srcset": "/_astro/IMG_6552.DHNxd_Wg_ZJhDw4.webp 200w, /_astro/IMG_6552.DHNxd_Wg_2rs5C8.webp 400w",
+            "loading": "lazy",
+            "alt": "Del Mar - IMG_6552"
+          },
+          {
+            "src": "/_astro/IMG_6553.DPdEjGBN_Z12WYTN.webp",
+            "srcset": "/_astro/IMG_6553.DPdEjGBN_gHMDB.webp 200w, /_astro/IMG_6553.DPdEjGBN_Z1BIB18.webp 400w",
+            "loading": "lazy",
+            "alt": "Del Mar - IMG_6553"
+          },
+          {
+            "src": "/_astro/IMG_6554.CEt0DGv4_vBQoH.webp",
+            "srcset": "/_astro/IMG_6554.CEt0DGv4_jMSgC.webp 200w, /_astro/IMG_6554.CEt0DGv4_Z1yDvo7.webp 400w",
+            "loading": "lazy",
+            "alt": "Del Mar - IMG_6554"
+          },
+          {
+            "src": "/_astro/IMG_6556.Btv68iSM_Z1C462C.webp",
+            "srcset": "/_astro/IMG_6556.Btv68iSM_TBi6r.webp 200w, /_astro/IMG_6556.Btv68iSM_ZXP6yi.webp 400w",
+            "loading": "lazy",
+            "alt": "Del Mar - IMG_6556"
+          },
+          {
+            "src": "/_astro/IMG_6559.BEg0prph_ZkxzQb.webp",
+            "srcset": "/_astro/IMG_6559.BEg0prph_ZlTkxC.webp 200w, /_astro/IMG_6559.BEg0prph_Z2flJdm.webp 400w",
+            "loading": "lazy",
+            "alt": "Del Mar - IMG_6559"
+          },
+          {
+            "src": "/_astro/IMG_6567.BJFShyer_Z59kjm.webp",
+            "srcset": "/_astro/IMG_6567.BJFShyer_Z1krnIc.webp 200w, /_astro/IMG_6567.BJFShyer_1Qilq0.webp 400w",
+            "loading": "lazy",
+            "alt": "Del Mar - IMG_6567"
+          },
+          {
+            "src": "/_astro/paradiseiso.BJxsr27d_ZHuWHW.webp",
+            "srcset": "",
+            "loading": "lazy",
+            "alt": "Paradise Chapadmalal Logo"
+          }
+        ],
+        "links": [
+          {
+            "text": "Consultar disponibilidad",
+            "href": "https://wa.link/ob3h9i"
+          }
+        ],
+        "body": "                            Casa Paradise  Rincón  Del Mar           \nContactanos\n         Inicio  Cabañas  Casa Paradise  Rincón  Del Mar  \nContactanos\n   const t=document.getElementById(\"mobile-menu-button\"),e=document.getElementById(\"mobile-menu\"),n=document.getElementById(\"menu-icon\"),s=document.getElementById(\"close-icon\");t?.addEventListener(\"click\",()=>{!e?.classList.contains(\"hidden\")?(e?.classList.add(\"hidden\"),n?.classList.remove(\"hidden\"),s?.classList.add(\"hidden\")):(e?.classList.remove(\"hidden\"),n?.classList.add(\"hidden\"),s?.classList.remove(\"hidden\"))});const i=e?.querySelectorAll(\"a\");i?.forEach(d=>{d.addEventListener(\"click\",()=>{e?.classList.add(\"hidden\"),n?.classList.remove(\"hidden\"),s?.classList.add(\"hidden\")})});        Del Mar      4 personas   \nConsultar disponibilidad\n                                       \nCabañas Paradise Chapadmalal\n \nEST. 2019\n    Contacto    Whatsapp       Enlaces    Inicio    Cabañas    Casa Paradise    Rincón    Del Mar    Ubicación       Redes Sociales    Instagram        \n© 2025 Paradise Chapadmalal. Todos los derechos reservados.\n    "
+      },
+      {
+        "path": "/cabanas/rincon",
+        "status": 200,
+        "url": "https://paradisechapadmalal.com/cabanas/rincon",
+        "headers": {
+          "access-control-allow-origin": "*",
+          "age": "0",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-disposition": "inline; filename=\"rincon\"",
+          "content-encoding": "br",
+          "content-type": "text/html; charset=utf-8",
+          "date": "Thu, 29 Oct 2026 22:07:05 GMT",
+          "etag": "W/\"7e82fa12c0f2b8252605135c51f936e0\"",
+          "last-modified": "Thu, 29 Oct 2026 22:07:05 GMT",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "x-vercel-cache": "HIT",
+          "x-vercel-id": "gru1::bw9dq-1793311625712-9a45393e6f6f"
+        },
+        "title": "Paradise Chapadmalal",
+        "lang": "en",
+        "h1": [
+          "Rincón"
+        ],
+        "description": null,
+        "canonical": null,
+        "og": 0,
+        "schema": 0,
+        "images": [
+          {
+            "src": "/_astro/paradiseicon.Dj1BnRr5_1pVmXe.webp",
+            "srcset": "",
+            "loading": "lazy",
+            "alt": "Paradise Chapadmalal"
+          },
+          {
+            "src": "/_astro/paradiseicon.Dj1BnRr5_1pVmXe.webp",
+            "srcset": "",
+            "loading": "lazy",
+            "alt": "Paradise Chapadmalal"
+          },
+          {
+            "src": "/_astro/01rincon.i2Nn-vWJ_xmUzt.webp",
+            "srcset": "/_astro/01rincon.i2Nn-vWJ_Z1ozENH.webp 400w, /_astro/01rincon.i2Nn-vWJ_Z1xVvRz.webp 600w, /_astro/01rincon.i2Nn-vWJ_1CNdgC.webp 800w",
+            "loading": "eager",
+            "alt": "Rincón - 01rincon"
+          },
+          {
+            "src": "/_astro/IMG_1036.D8dMM0_3_Z2hdJrO.webp",
+            "srcset": "/_astro/IMG_1036.D8dMM0_3_ZzJfeL.webp 200w, /_astro/IMG_1036.D8dMM0_3_Z2tbDTv.webp 400w",
+            "loading": "lazy",
+            "alt": "Rincón - IMG_1036"
+          },
+          {
+            "src": "/_astro/IMG_3080.BuSCrRuE_Yvo5y.webp",
+            "srcset": "/_astro/IMG_3080.BuSCrRuE_Z1CkWh6.webp 200w, /_astro/IMG_3080.BuSCrRuE_1yoLR6.webp 400w",
+            "loading": "lazy",
+            "alt": "Rincón - IMG_3080"
+          },
+          {
+            "src": "/_astro/IMG_5080.ByTpT7kd_1SP4m0.webp",
+            "srcset": "/_astro/IMG_5080.ByTpT7kd_Z7uyHo.webp 200w, /_astro/IMG_5080.ByTpT7kd_Z20VXn8.webp 400w",
+            "loading": "lazy",
+            "alt": "Rincón - IMG_5080"
+          },
+          {
+            "src": "/_astro/IMG_5081.Bf5lxxX__2nRDej.webp",
+            "srcset": "/_astro/IMG_5081.Bf5lxxX__Z1fzbWQ.webp 200w, /_astro/IMG_5081.Bf5lxxX__1Vaxbl.webp 400w",
+            "loading": "lazy",
+            "alt": "Rincón - IMG_5081"
+          },
+          {
+            "src": "/_astro/IMG_6541.ClYcdmBh_C1CKz.webp",
+            "srcset": "/_astro/IMG_6541.ClYcdmBh_1D3Coj.webp 200w, /_astro/IMG_6541.ClYcdmBh_ZfnLgq.webp 400w",
+            "loading": "lazy",
+            "alt": "Rincón - IMG_6541"
+          },
+          {
+            "src": "/_astro/IMG_6542.BRN7D1jS_Z92Kxk.webp",
+            "srcset": "/_astro/IMG_6542.BRN7D1jS_Mv2Ja.webp 200w, /_astro/IMG_6542.BRN7D1jS_Z15VlUz.webp 400w",
+            "loading": "lazy",
+            "alt": "Rincón - IMG_6542"
+          },
+          {
+            "src": "/_astro/paradiseiso.BJxsr27d_ZHuWHW.webp",
+            "srcset": "",
+            "loading": "lazy",
+            "alt": "Paradise Chapadmalal Logo"
+          }
+        ],
+        "links": [
+          {
+            "text": "Consultar disponibilidad",
+            "href": "https://wa.link/ob3h9i"
+          }
+        ],
+        "body": "                            Casa Paradise  Rincón  Del Mar           \nContactanos\n         Inicio  Cabañas  Casa Paradise  Rincón  Del Mar  \nContactanos\n   const t=document.getElementById(\"mobile-menu-button\"),e=document.getElementById(\"mobile-menu\"),n=document.getElementById(\"menu-icon\"),s=document.getElementById(\"close-icon\");t?.addEventListener(\"click\",()=>{!e?.classList.contains(\"hidden\")?(e?.classList.add(\"hidden\"),n?.classList.remove(\"hidden\"),s?.classList.add(\"hidden\")):(e?.classList.remove(\"hidden\"),n?.classList.add(\"hidden\"),s?.classList.remove(\"hidden\"))});const i=e?.querySelectorAll(\"a\");i?.forEach(d=>{d.addEventListener(\"click\",()=>{e?.classList.add(\"hidden\"),n?.classList.remove(\"hidden\"),s?.classList.add(\"hidden\")})});        Rincón      2 personas   \nConsultar disponibilidad\n                                       \nCabañas Paradise Chapadmalal\n \nEST. 2019\n    Contacto    Whatsapp       Enlaces    Inicio    Cabañas    Casa Paradise    Rincón    Del Mar    Ubicación       Redes Sociales    Instagram        \n© 2025 Paradise Chapadmalal. Todos los derechos reservados.\n    "
+      },
+      {
+        "path": "/robots.txt",
+        "status": 404,
+        "url": "https://paradisechapadmalal.com/robots.txt",
+        "headers": {
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-length": "79",
+          "content-type": "text/plain; charset=utf-8",
+          "date": "Thu, 29 Oct 2026 22:07:05 GMT",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "x-vercel-error": "NOT_FOUND",
+          "x-vercel-id": "gru1::976lr-1793311625712-6300006b9d6a"
+        },
+        "title": "",
+        "lang": "",
+        "h1": [],
+        "description": null,
+        "canonical": null,
+        "og": 0,
+        "schema": 0,
+        "images": [],
+        "links": [],
+        "body": "The page could not be found\n\nNOT_FOUND\n\ngru1::976lr-1793311625712-6300006b9d6a\n"
+      },
+      {
+        "path": "/sitemap.xml",
+        "status": 404,
+        "url": "https://paradisechapadmalal.com/sitemap.xml",
+        "headers": {
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-length": "79",
+          "content-type": "text/plain; charset=utf-8",
+          "date": "Thu, 29 Oct 2026 22:07:05 GMT",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "x-vercel-error": "NOT_FOUND",
+          "x-vercel-id": "gru1::rjbdr-1793311625712-2e508793f15d"
+        },
+        "title": "",
+        "lang": "",
+        "h1": [],
+        "description": null,
+        "canonical": null,
+        "og": 0,
+        "schema": 0,
+        "images": [],
+        "links": [],
+        "body": "The page could not be found\n\nNOT_FOUND\n\ngru1::rjbdr-1793311625712-2e508793f15d\n"
+      },
+      {
+        "path": "/sitemap-index.xml",
+        "status": 404,
+        "url": "https://paradisechapadmalal.com/sitemap-index.xml",
+        "headers": {
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-length": "79",
+          "content-type": "text/plain; charset=utf-8",
+          "date": "Thu, 29 Oct 2026 22:07:05 GMT",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "x-vercel-error": "NOT_FOUND",
+          "x-vercel-id": "gru1::gkqhs-1793311625712-0a517d1c6e7c"
+        },
+        "title": "",
+        "lang": "",
+        "h1": [],
+        "description": null,
+        "canonical": null,
+        "og": 0,
+        "schema": 0,
+        "images": [],
+        "links": [],
+        "body": "The page could not be found\n\nNOT_FOUND\n\ngru1::gkqhs-1793311625712-0a517d1c6e7c\n"
+      },
+      {
+        "path": "/esta-pagina-no-existe-auditoria",
+        "status": 404,
+        "url": "https://paradisechapadmalal.com/esta-pagina-no-existe-auditoria",
+        "headers": {
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-length": "79",
+          "content-type": "text/plain; charset=utf-8",
+          "date": "Thu, 29 Oct 2026 22:07:05 GMT",
+          "server": "Vercel",
+          "strict-transport-security": "max-age=63072000",
+          "x-vercel-error": "NOT_FOUND",
+          "x-vercel-id": "gru1::mkcbt-1793311625719-c00df0f0c809"
+        },
+        "title": "",
+        "lang": "",
+        "h1": [],
+        "description": null,
+        "canonical": null,
+        "og": 0,
+        "schema": 0,
+        "images": [],
+        "links": [],
+        "body": "The page could not be found\n\nNOT_FOUND\n\ngru1::mkcbt-1793311625719-c00df0f0c809\n"
+      }
+    ],
+    "vitals": {
+      "lcp": [
+        {
+          "startTime": 624,
+          "size": 2246,
+          "url": "",
+          "tag": "A",
+          "text": " Casa Paradise "
+        },
+        {
+          "startTime": 1260,
+          "size": 109463,
+          "url": "",
+          "tag": "P",
+          "text": "\nEl lugar perfecto para pasar vacaciones o simplemente disfrutar de unos\n      días de descanso con "
+        }
+      ],
+      "cls": [
+        {
+          "value": 0.0000029972076416015623,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "tag": "A",
+              "previous": {},
+              "current": {}
+            }
+          ]
+        }
+      ]
+    },
+    "paints": [
+      {
+        "name": "first-paint",
+        "entryType": "paint",
+        "startTime": 624,
+        "duration": 0,
+        "navigationId": 5248,
+        "paintTime": 607,
+        "presentationTime": 624
+      },
+      {
+        "name": "first-contentful-paint",
+        "entryType": "paint",
+        "startTime": 624,
+        "duration": 0,
+        "navigationId": 5248,
+        "paintTime": 607,
+        "presentationTime": 624
+      }
+    ]
+  },
+  "assets": {
+    "checked": 86,
+    "failures": [],
+    "samples": [
+      {
+        "path": "/_astro/_slug_.IxwI2vqK.css",
+        "status": 200,
+        "headers": {
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "age": "27937",
+          "cache-control": "public, max-age=31536000, immutable",
+          "content-disposition": "inline; filename=\"_slug_.IxwI2vqK.css\"",
+          "content-encoding": "br",
+          "content-length": "5240",
+          "content-type": "text/css; charset=utf-8",
+          "date": "Thu, 29 Oct 2026 22:06:24 GMT",
+          "etag": "\"ebe63166fcbfcd917a11d45b4e50b3a5\"",
+          "last-modified": "Thu, 29 Oct 2026 14:20:46 GMT",
+          "server": "Vercel",
+          "x-vercel-cache": "HIT",
+          "x-vercel-id": "gru1::85fw5-1793311584053-f206dfc13a2a"
+        }
+      },
+      {
+        "path": "/_astro/portada.DjAerQsp_Z1zSvew.webp",
+        "status": 200,
+        "headers": {
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "age": "27937",
+          "cache-control": "public, max-age=31536000, immutable",
+          "content-disposition": "inline; filename=\"portada.DjAerQsp_Z1zSvew.webp\"",
+          "content-length": "4151406",
+          "content-type": "image/webp",
+          "date": "Thu, 29 Oct 2026 22:06:24 GMT",
+          "etag": "\"96e4beabf46475cf5b459949760b45b1\"",
+          "last-modified": "Thu, 29 Oct 2026 14:20:46 GMT",
+          "server": "Vercel",
+          "x-vercel-cache": "HIT",
+          "x-vercel-id": "gru1::v7st6-1793311584259-be6d7e8d727b"
+        }
+      },
+      {
+        "path": "/_astro/fogonero.kNVqNvtf_9Gapn.webp",
+        "status": 200,
+        "headers": {
+          "accept-ranges": "bytes",
+          "access-control-allow-origin": "*",
+          "age": "27937",
+          "cache-control": "public, max-age=31536000, immutable",
+          "content-disposition": "inline; filename=\"fogonero.kNVqNvtf_9Gapn.webp\"",
+          "content-length": "3097128",
+          "content-type": "image/webp",
+          "date": "Thu, 29 Oct 2026 22:06:24 GMT",
+          "etag": "\"44c94dbdae99246db888fa1c97f69984\"",
+          "last-modified": "Thu, 29 Oct 2026 14:20:46 GMT",
+          "server": "Vercel",
+          "x-vercel-cache": "HIT",
+          "x-vercel-id": "gru1::4wxbh-1793311584053-84f8ac3b1b8c"
+        }
+      }
+    ]
+  },
+  "homeMobileAxe": {
+    "before": {
+      "viewport": {
+        "w": 375,
+        "h": 667,
+        "scrollWidth": 375
+      },
+      "hero": [
+        {
+          "text": "Cabañas  de Mar",
+          "rect": {
+            "x": 64,
+            "y": 173.5,
+            "w": 247,
+            "h": 80,
+            "bottom": 253.5,
+            "right": 311
+          }
+        },
+        {
+          "text": "El lugar perfecto para pasar vacaciones o simplemente disfrutar de unos\n      días de descanso con familia y amigos, entre el campo y el mar",
+          "rect": {
+            "x": 64,
+            "y": 269.5,
+            "w": 247,
+            "h": 224,
+            "bottom": 493.5,
+            "right": 311
+          }
+        },
+        {
+          "text": "64 opiniones en Google Maps",
+          "rect": {
+            "x": 133,
+            "y": 4606,
+            "w": 199,
+            "h": 20,
+            "bottom": 4626,
+            "right": 332
+          }
+        },
+        {
+          "text": "Hace 8 meses",
+          "rect": {
+            "x": 138,
+            "y": 4698,
+            "w": 94.5,
+            "h": 20,
+            "bottom": 4718,
+            "right": 232.5
+          }
+        },
+        {
+          "text": "Las cabañas increíbles y los anfitriones mucho más. Vivi y Pato unos genios. Siempre estuvieron atentos y predispuestos para todo lo que necesitamos. (Eso es muy difícil de encontrar). Con respecto a las cabañas, la experiencia fue muy linda. Cómodas, equipadas y cuentan con un jardín hermoso. Otro dato a destacar, es la excelente ubicación en la que se encuentran las mismas. A cuatro cuadras de cruz del sur y a cinco cuadras de una zona de almacenes y restaurantes. Experiencia 10/10 que ya quiero volver a vivir.",
+          "rect": {
+            "x": 40,
+            "y": 4738,
+            "w": 295,
+            "h": 318.5,
+            "bottom": 5056.5,
+            "right": 335
+          }
+        },
+        {
+          "text": "Hace 8 meses",
+          "rect": {
+            "x": 138,
+            "y": 5168.5,
+            "w": 94.5,
+            "h": 20,
+            "bottom": 5188.5,
+            "right": 232.5
+          }
+        },
+        {
+          "text": "Fui con mi grupo de amigas a la cabaña de 6 y todo estuvo impecable!! el espacio es muy cómodo y muy lindo. El jardín es un espacio muy grande y clave para los momentos en los que compartíamos con los otros grupos de amigas de las otras cabañas. Viví y Pato fueron muy atentos a cada detalle. Era nuestra primera vez en chapa y nos recomendaron un montón de cosas para hacer. Nos hicieron sentir muy cómodas y cuidadas. La ubicación es la mejor ubicación que se puede tener, se puede hacer todo caminando.",
+          "rect": {
+            "x": 40,
+            "y": 5208.5,
+            "w": 295,
+            "h": 295.75,
+            "bottom": 5504.25,
+            "right": 335
+          }
+        },
+        {
+          "text": "Hace 6 meses",
+          "rect": {
+            "x": 138,
+            "y": 5616.25,
+            "w": 94.5,
+            "h": 20,
+            "bottom": 5636.25,
+            "right": 232.5
+          }
+        },
+        {
+          "text": "Very nice hosts and nice cabañas. Patricio lent me one of his surfboards to use and they were super helpful with recommendations of places to go and the various beaches. They even gave us a ride to the estacion omnibus when we left. Recommend!",
+          "rect": {
+            "x": 40,
+            "y": 5656.25,
+            "w": 295,
+            "h": 159.25,
+            "bottom": 5815.5,
+            "right": 335
+          }
+        },
+        {
+          "text": "Hace 7 meses",
+          "rect": {
+            "x": 138,
+            "y": 5927.5,
+            "w": 94,
+            "h": 20,
+            "bottom": 5947.5,
+            "right": 232
+          }
+        },
+        {
+          "text": "Excelente lugar para descansar, desconectarse y conectarse con la naturaleza. Las cabañas buenísimas, equipadas y todo lo necesario para disfrutar de la estadía. Estuve ahí con mi mujer y la pasamos bárbaros, con ganas de volver nuevamente. Los dueños Pato y Viví, super divinos y con una energía maravillosa y muy amables, gracias por todo, volveremos.",
+          "rect": {
+            "x": 40,
+            "y": 5967.5,
+            "w": 295,
+            "h": 227.5,
+            "bottom": 6195,
+            "right": 335
+          }
+        },
+        {
+          "text": "Hace 8 meses",
+          "rect": {
+            "x": 138,
+            "y": 6307,
+            "w": 94.5,
+            "h": 20,
+            "bottom": 6327,
+            "right": 232.5
+          }
+        },
+        {
+          "text": "Súper cómodas, te hacían sentir como en casa, perfectas para descansar y desconectarse. La decoración era hermosa, con detalles rústicos y acogedores que les daban un aire especial. Además, la ubicación era ideal, permitiéndote disfrutar de la naturaleza o explorar los alrededores con facilidad. Un lugar perfecto para relajarse y disfrutar la naturaleza.",
+          "rect": {
+            "x": 40,
+            "y": 6347,
+            "w": 295,
+            "h": 204.75,
+            "bottom": 6551.75,
+            "right": 335
+          }
+        },
+        {
+          "text": "Hace 9 meses",
+          "rect": {
+            "x": 138,
+            "y": 6663.75,
+            "w": 94.5,
+            "h": 20,
+            "bottom": 6683.75,
+            "right": 232.5
+          }
+        },
+        {
+          "text": "Alquilé este espacio para brindar los retiros y fue algo mágico! Nos sentimos todo el tiempo no solo en Cabañas, sino en un hogar con calidez y con amor en cada detalle. Viví y pato, los dueños, súper atentos y amorosos. Tienen un jardín hermoso donde se puede disfrutar de la tranquilidad y sonido de los pájaros. Ideal para compartir momentos. Vamos a volver por más!",
+          "rect": {
+            "x": 40,
+            "y": 6703.75,
+            "w": 295,
+            "h": 227.5,
+            "bottom": 6931.25,
+            "right": 335
+          }
+        }
+      ],
+      "overflow": [],
+      "button": "<button id=\"mobile-menu-button\" type=\"button\" class=\"text-white hover:text-gray-300 focus:outline-none\" aria-label=\"Abrir menú\"> <svg id=\"menu-icon\" class=\"h-6 w-6\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"> <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M4 6h16M4 12h16M4 18h16\"></path> </svg> <svg id=\"close-icon\" class=\"h-6 w-6 hidden\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"> <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M6 18L18 6M6 6l12 12\"></path> </svg> </button>"
+    },
+    "axe": {
+      "version": "4.10.3",
+      "violations": [
+        {
+          "id": "frame-title",
+          "impact": "serious",
+          "description": "Ensure <iframe> and <frame> elements have an accessible name",
+          "help": "Frames must have an accessible name",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/frame-title?application=axeAPI",
+          "nodes": [
+            {
+              "target": [
+                "#instagram-embed-0"
+              ],
+              "html": "<iframe class=\"instagram-media instagram-media-rendered\" id=\"instagram-embed-0\" src=\"https://www.instagram.com/reel/DDe7CMVR5dP/embed/?cr=1&amp;v=14&amp;rd=https%3A%2F%2Fparadisechapadmalal.com&amp;rp=%2F#%7B%22ci%22%3A0%2C%22os%22%3A874.5%2C%22ls%22%3A412.69999980926514%2C%22le%22%3A764.5999994277954%7D\" allowtransparency=\"true\" allowfullscreen=\"true\" frameborder=\"0\" height=\"613\" data-instgrm-payload-id=\"instagram-media-payload-0\" scrolling=\"no\" style=\"background-color: white; border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;\">",
+              "failure": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "target": [
+                "#instagram-embed-1"
+              ],
+              "html": "<iframe class=\"instagram-media instagram-media-rendered\" id=\"instagram-embed-1\" src=\"https://www.instagram.com/reel/DFX84JUR3G_/embed/?cr=1&amp;v=14&amp;rd=https%3A%2F%2Fparadisechapadmalal.com&amp;rp=%2F#%7B%22ci%22%3A1%2C%22os%22%3A876.8999996185303%2C%22ls%22%3A412.69999980926514%2C%22le%22%3A764.5999994277954%7D\" allowtransparency=\"true\" allowfullscreen=\"true\" frameborder=\"0\" height=\"613\" data-instgrm-payload-id=\"instagram-media-payload-1\" scrolling=\"no\" style=\"background-color: white; border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;\">",
+              "failure": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "target": [
+                "#instagram-embed-2"
+              ],
+              "html": "<iframe class=\"instagram-media instagram-media-rendered\" id=\"instagram-embed-2\" src=\"https://www.instagram.com/reel/CzYaTLPrh3e/embed/?cr=1&amp;v=14&amp;rd=https%3A%2F%2Fparadisechapadmalal.com&amp;rp=%2F#%7B%22ci%22%3A2%2C%22os%22%3A877.6999998092651%2C%22ls%22%3A412.69999980926514%2C%22le%22%3A764.5999994277954%7D\" allowtransparency=\"true\" allowfullscreen=\"true\" frameborder=\"0\" height=\"613\" data-instgrm-payload-id=\"instagram-media-payload-2\" scrolling=\"no\" style=\"background-color: white; border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;\">",
+              "failure": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "target": [
+                "iframe[width=\"100%\"]"
+              ],
+              "html": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3136.462685327735!2d-57.65337590000001!3d-38.175925299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95851d1592f6455b%3A0x4565673369ada6ae!2sCaba%C3%B1as%20Paradise%20Chapadmalal!5e0!3m2!1ses-419!2sar!4v1761052904377!5m2!1ses-419!2sar\" width=\"100%\" height=\"100%\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" class=\"w-full h-full\">",
+              "failure": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ]
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "Ensure all page content is contained by landmarks",
+          "help": "All page content should be contained by landmarks",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=axeAPI",
+          "nodes": [
+            {
+              "target": [
+                ".h-screen"
+              ],
+              "html": "<div class=\"relative w-full h-screen overflow-hidden\">",
+              "failure": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "target": [
+                ".text-left"
+              ],
+              "html": "<h2 class=\"text-4xl font-bold text-left mb-8\">Amenities</h2>",
+              "failure": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "target": [
+                ".bg-gray-100.md\\:w-\\[calc\\(50\\%-12px\\)\\].lg\\:w-\\[calc\\(33\\.333\\%-16px\\)\\]:nth-child(1) > .gap-3.mb-3.items-center > h3"
+              ],
+              "html": "<h3 class=\"text-xl font-semibold\">Servicios</h3>",
+              "failure": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "target": [
+                ".bg-gray-100.md\\:w-\\[calc\\(50\\%-12px\\)\\].lg\\:w-\\[calc\\(33\\.333\\%-16px\\)\\]:nth-child(1) > .text-black.leading-relaxed.font-light"
+              ],
+              "html": "<p class=\"text-black font-light leading-relaxed\"> Servicio de blanco (sabanas). Kit de cortesia (cafe, te, agua mineral, bombones). </p>",
+              "failure": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "target": [
+                ".bg-gray-100.md\\:w-\\[calc\\(50\\%-12px\\)\\].lg\\:w-\\[calc\\(33\\.333\\%-16px\\)\\]:nth-child(2) > .gap-3.mb-3.items-center > h3"
+              ],
+              "html": "<h3 class=\"text-xl font-semibold\">Parrilla y Fogonero</h3>",
+              "failure": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "target": [
+                ".bg-gray-100.md\\:w-\\[calc\\(50\\%-12px\\)\\].lg\\:w-\\[calc\\(33\\.333\\%-16px\\)\\]:nth-child(2) > .text-black.leading-relaxed.font-light"
+              ],
+              "html": "<p class=\"text-black font-light leading-relaxed\"> Espacio de uso comun para poder realizar asados o comidas y disfrutar de fogones entre amigos. </p>",
+              "failure": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "target": [
+                ".bg-gray-100.md\\:w-\\[calc\\(50\\%-12px\\)\\].lg\\:w-\\[calc\\(33\\.333\\%-16px\\)\\]:nth-child(3) > .gap-3.mb-3.items-center > h3"
+              ],
+              "html": "<h3 class=\"text-xl font-semibold\">Espacio cerrado</h3>",
+              "failure": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "target": [
+                ".bg-gray-100.md\\:w-\\[calc\\(50\\%-12px\\)\\].lg\\:w-\\[calc\\(33\\.333\\%-16px\\)\\]:nth-child(3) > .text-black.leading-relaxed.font-light"
+              ],
+              "html": "<p class=\"text-black font-light leading-relaxed\"> Predio cerrado con cerco natural. Camaras de seguridad grabando 24/7 e iluminacion con sensor de movimiento. </p>",
+              "failure": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "target": [
+                ".bg-gray-100.md\\:w-\\[calc\\(50\\%-12px\\)\\].lg\\:w-\\[calc\\(33\\.333\\%-16px\\)\\]:nth-child(4) > .gap-3.mb-3.items-center > h3"
+              ],
+              "html": "<h3 class=\"text-xl font-semibold\">Wi-Fi</h3>",
+              "failure": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "target": [
+                ".bg-gray-100.md\\:w-\\[calc\\(50\\%-12px\\)\\].lg\\:w-\\[calc\\(33\\.333\\%-16px\\)\\]:nth-child(4) > .text-black.leading-relaxed.font-light"
+              ],
+              "html": "<p class=\"text-black font-light leading-relaxed\"> Fibra optica e internet satelital, para que puedas hacer Home Office desde cualquiera de las cabañas </p>",
+              "failure": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "target": [
+                ".bg-gray-100.md\\:w-\\[calc\\(50\\%-12px\\)\\].lg\\:w-\\[calc\\(33\\.333\\%-16px\\)\\]:nth-child(5) > .gap-3.mb-3.items-center > h3"
+              ],
+              "html": "<h3 class=\"text-xl font-semibold\">Smart TV</h3>",
+              "failure": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "target": [
+                ".bg-gray-100.md\\:w-\\[calc\\(50\\%-12px\\)\\].lg\\:w-\\[calc\\(33\\.333\\%-16px\\)\\]:nth-child(5) > .text-black.leading-relaxed.font-light"
+              ],
+              "html": "<p class=\"text-black font-light leading-relaxed\"> Television satelital, 100% digital. Contamos con televisores Smart para poder utilizar aplicaciones de streaming de series/peliculas. </p>",
+              "failure": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "target": [
+                ".md\\:p-12"
+              ],
+              "html": "<section class=\"grid grid-cols-1 md:grid-cols-2 items-center justify-center md:p-12 md:gap-4 md:h-screen\">",
+              "failure": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "target": [
+                ".p-4"
+              ],
+              "html": "<div class=\"max-w-7xl mx-auto p-4 md:p-8 md:py-16\">",
+              "failure": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "target": [
+                ".text-3xl"
+              ],
+              "html": "<h2 class=\"text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8\">\nNuestra Ubicación\n</h2>",
+              "failure": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 38
+        },
+        {
+          "id": "frame-tested",
+          "impact": "critical",
+          "nodes": 4
+        }
+      ]
+    }
+  },
+  "listingLoaded": {
+    "images": [
+      {
+        "alt": "Paradise Chapadmalal",
+        "src": "https://paradisechapadmalal.com/_astro/paradiseicon.Dj1BnRr5_1pVmXe.webp",
+        "complete": true,
+        "w": 1042,
+        "h": 1066
+      },
+      {
+        "alt": "Paradise Chapadmalal",
+        "src": "https://paradisechapadmalal.com/_astro/paradiseicon.Dj1BnRr5_1pVmXe.webp",
+        "complete": true,
+        "w": 1042,
+        "h": 1066
+      },
+      {
+        "alt": "Portada de Casa Paradise",
+        "src": "https://paradisechapadmalal.com/_astro/portada.DjAerQsp_Z1jCb2S.webp",
+        "complete": true,
+        "w": 374,
+        "h": 500
+      },
+      {
+        "alt": "Portada de Del Mar",
+        "src": "https://paradisechapadmalal.com/_astro/delmar.sj57AwMP_1MJeGL.webp",
+        "complete": true,
+        "w": 374,
+        "h": 500
+      },
+      {
+        "alt": "Portada de Rincón",
+        "src": "https://paradisechapadmalal.com/_astro/01rincon.i2Nn-vWJ_1CNdgC.webp",
+        "complete": true,
+        "w": 374,
+        "h": 500
+      },
+      {
+        "alt": "Paradise Chapadmalal Logo",
+        "src": "https://paradisechapadmalal.com/_astro/paradiseiso.BJxsr27d_ZHuWHW.webp",
+        "complete": true,
+        "w": 1080,
+        "h": 1080
+      }
+    ],
+    "resources": [
+      {
+        "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap",
+        "status": 0,
+        "bytes": 814,
+        "duration": 80.19999980926514
+      },
+      {
+        "url": "https://paradisechapadmalal.com/_astro/_slug_.IxwI2vqK.css",
+        "status": 200,
+        "bytes": 5240,
+        "duration": 0
+      },
+      {
+        "url": "https://paradisechapadmalal.com/_astro/paradiseicon.Dj1BnRr5_1pVmXe.webp",
+        "status": 200,
+        "bytes": 29214,
+        "duration": 0
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+        "status": 200,
+        "bytes": 48256,
+        "duration": 0
+      },
+      {
+        "url": "https://paradisechapadmalal.com/_astro/paradiseiso.BJxsr27d_ZHuWHW.webp",
+        "status": 200,
+        "bytes": 51054,
+        "duration": 71.90000057220459
+      },
+      {
+        "url": "https://paradisechapadmalal.com/_astro/portada.DjAerQsp_Z1jCb2S.webp",
+        "status": 200,
+        "bytes": 278346,
+        "duration": 383.5
+      },
+      {
+        "url": "https://paradisechapadmalal.com/_astro/delmar.sj57AwMP_1MJeGL.webp",
+        "status": 200,
+        "bytes": 207464,
+        "duration": 271
+      },
+      {
+        "url": "https://paradisechapadmalal.com/_astro/01rincon.i2Nn-vWJ_1CNdgC.webp",
+        "status": 200,
+        "bytes": 272378,
+        "duration": 283.5
+      }
+    ],
+    "text": "Nuestras Cabañas\n\nDescubre nuestras cómodas cabañas en Chapadmalal, perfectas para tu escapada.\n\nCasa Paradise\n\n6 personas\n\nVer más\nDel Mar\n\n4 personas\n\nVer más\nRincón\n\n2 personas\n\nVer más"
+  },
+  "casaMobile": {
+    "url": "https://paradisechapadmalal.com/cabanas/casa-paradise",
+    "viewport": {
+      "w": 375,
+      "h": 667,
+      "scrollWidth": 375,
+      "dpr": 2
+    },
+    "text": "Casa Paradise\n6 personas\nConsultar disponibilidad",
+    "header": [
+      {
+        "text": "Casa Paradise",
+        "rect": {
+          "x": 16,
+          "y": 112,
+          "w": 196.2265625,
+          "h": 80,
+          "right": 212.2265625,
+          "bottom": 192
+        }
+      },
+      {
+        "text": "Consultar disponibilidad",
+        "rect": {
+          "x": 212.2265625,
+          "y": 112,
+          "w": 146.7734375,
+          "h": 72,
+          "right": 359,
+          "bottom": 184
+        }
+      }
+    ],
+    "gallery": [
+      {
+        "src": "https://paradisechapadmalal.com/_astro/fogonero.kNVqNvtf_Z2t7b4i.webp",
+        "alt": "Casa Paradise - fogonero",
+        "rect": {
+          "x": 12.57000732421875,
+          "y": 263.4253234863281,
+          "w": 349.8599853515625,
+          "h": 466.6181335449219,
+          "right": 362.42999267578125,
+          "bottom": 730.04345703125
+        },
+        "complete": true,
+        "natural": [
+          374,
+          500
+        ],
+        "clickable": false,
+        "srcset": "/_astro/fogonero.kNVqNvtf_ZqiUkG.webp 400w, /_astro/fogonero.kNVqNvtf_ZzELoy.webp 600w, /_astro/fogonero.kNVqNvtf_Z2t7b4i.webp 800w"
+      },
+      {
+        "src": "https://paradisechapadmalal.com/_astro/IMG_2949.BvLGvpfo_Zl7ytw.webp",
+        "alt": "Casa Paradise - IMG_2949",
+        "rect": {
+          "x": 16,
+          "y": 741.46875,
+          "w": 163.5,
+          "h": 163.5,
+          "right": 179.5,
+          "bottom": 904.96875
+        },
+        "complete": true,
+        "natural": [
+          187,
+          249
+        ],
+        "clickable": false,
+        "srcset": "/_astro/IMG_2949.BvLGvpfo_1xjPbd.webp 200w, /_astro/IMG_2949.BvLGvpfo_Zl7ytw.webp 400w"
+      },
+      {
+        "src": "https://paradisechapadmalal.com/_astro/IMG_2953.ChuGoAA4_PdTMb.webp",
+        "alt": "Casa Paradise - IMG_2953",
+        "rect": {
+          "x": 195.5,
+          "y": 741.46875,
+          "w": 163.5,
+          "h": 163.5,
+          "right": 359,
+          "bottom": 904.96875
+        },
+        "complete": true,
+        "natural": [
+          187,
+          249
+        ],
+        "clickable": false,
+        "srcset": "/_astro/IMG_2953.ChuGoAA4_Z2lvOm1.webp 200w, /_astro/IMG_2953.ChuGoAA4_PdTMb.webp 400w"
+      },
+      {
+        "src": "https://paradisechapadmalal.com/_astro/IMG_2955.GJi-kp_c_GlFvp.webp",
+        "alt": "Casa Paradise - IMG_2955",
+        "rect": {
+          "x": 16,
+          "y": 920.96875,
+          "w": 163.5,
+          "h": 163.5,
+          "right": 179.5,
+          "bottom": 1084.46875
+        },
+        "complete": true,
+        "natural": [
+          187,
+          249
+        ],
+        "clickable": false,
+        "srcset": "/_astro/IMG_2955.GJi-kp_c_Z2uo3CM.webp 200w, /_astro/IMG_2955.GJi-kp_c_GlFvp.webp 400w"
+      },
+      {
+        "src": "https://paradisechapadmalal.com/_astro/IMG_3877.B5kDviEG_ZKdeYQ.webp",
+        "alt": "Casa Paradise - IMG_3877",
+        "rect": {
+          "x": 195.5,
+          "y": 920.96875,
+          "w": 163.5,
+          "h": 163.5,
+          "right": 359,
+          "bottom": 1084.46875
+        },
+        "complete": true,
+        "natural": [
+          187,
+          249
+        ],
+        "clickable": false,
+        "srcset": "/_astro/IMG_3877.B5kDviEG_18e9ES.webp 200w, /_astro/IMG_3877.B5kDviEG_ZKdeYQ.webp 400w"
+      },
+      {
+        "src": "https://paradisechapadmalal.com/_astro/IMG_5776.BXeFv4Zg_8jRC6.webp",
+        "alt": "Casa Paradise - IMG_5776",
+        "rect": {
+          "x": 16,
+          "y": 1100.46875,
+          "w": 163.5,
+          "h": 163.5,
+          "right": 179.5,
+          "bottom": 1263.96875
+        },
+        "complete": true,
+        "natural": [
+          187,
+          249
+        ],
+        "clickable": false,
+        "srcset": "/_astro/IMG_5776.BXeFv4Zg_21LhhP.webp 200w, /_astro/IMG_5776.BXeFv4Zg_8jRC6.webp 400w"
+      },
+      {
+        "src": "https://paradisechapadmalal.com/_astro/IMG_5851.R2oMC2q2_Z1GMiEF.webp",
+        "alt": "Casa Paradise - IMG_5851",
+        "rect": {
+          "x": 195.5,
+          "y": 1100.46875,
+          "w": 163.5,
+          "h": 163.5,
+          "right": 359,
+          "bottom": 1263.96875
+        },
+        "complete": true,
+        "natural": [
+          187,
+          249
+        ],
+        "clickable": false,
+        "srcset": "/_astro/IMG_5851.R2oMC2q2_bE604.webp 200w, /_astro/IMG_5851.R2oMC2q2_Z1GMiEF.webp 400w"
+      },
+      {
+        "src": "https://paradisechapadmalal.com/_astro/IMG_5859.BQZwK-Ld_ZKhMjM.webp",
+        "alt": "Casa Paradise - IMG_5859",
+        "rect": {
+          "x": 16,
+          "y": 1279.96875,
+          "w": 163.5,
+          "h": 163.5,
+          "right": 179.5,
+          "bottom": 1443.46875
+        },
+        "complete": true,
+        "natural": [
+          187,
+          249
+        ],
+        "clickable": false,
+        "srcset": "/_astro/IMG_5859.BQZwK-Ld_189BkW.webp 200w, /_astro/IMG_5859.BQZwK-Ld_ZKhMjM.webp 400w"
+      },
+      {
+        "src": "https://paradisechapadmalal.com/_astro/IMG_5865.CBR53PFX_GSxh.webp",
+        "alt": "Casa Paradise - IMG_5865",
+        "rect": {
+          "x": 195.5,
+          "y": 1279.96875,
+          "w": 163.5,
+          "h": 163.5,
+          "right": 359,
+          "bottom": 1443.46875
+        },
+        "complete": true,
+        "natural": [
+          187,
+          249
+        ],
+        "clickable": false,
+        "srcset": "/_astro/IMG_5865.CBR53PFX_1T9id1.webp 200w, /_astro/IMG_5865.CBR53PFX_GSxh.webp 400w"
+      },
+      {
+        "src": "https://paradisechapadmalal.com/_astro/IMG_5878.CxpuOKoO_Z2eIRki.webp",
+        "alt": "Casa Paradise - IMG_5878",
+        "rect": {
+          "x": 16,
+          "y": 1459.46875,
+          "w": 163.5,
+          "h": 163.5,
+          "right": 179.5,
+          "bottom": 1622.96875
+        },
+        "complete": true,
+        "natural": [
+          187,
+          249
+        ],
+        "clickable": false,
+        "srcset": "/_astro/IMG_5878.CxpuOKoO_ZlhsEy.webp 200w, /_astro/IMG_5878.CxpuOKoO_Z2eIRki.webp 400w"
+      },
+      {
+        "src": "https://paradisechapadmalal.com/_astro/IMG_5883.2lcMbXCI_Z1Oy998.webp",
+        "alt": "Casa Paradise - IMG_5883",
+        "rect": {
+          "x": 195.5,
+          "y": 1459.46875,
+          "w": 163.5,
+          "h": 163.5,
+          "right": 359,
+          "bottom": 1622.96875
+        },
+        "complete": true,
+        "natural": [
+          187,
+          249
+        ],
+        "clickable": false,
+        "srcset": "/_astro/IMG_5883.2lcMbXCI_3SfvB.webp 200w, /_astro/IMG_5883.2lcMbXCI_Z1Oy998.webp 400w"
+      },
+      {
+        "src": "https://paradisechapadmalal.com/_astro/portada.DjAerQsp_Z2mB9Ll.webp",
+        "alt": "Casa Paradise - portada",
+        "rect": {
+          "x": 16,
+          "y": 1638.96875,
+          "w": 163.5,
+          "h": 163.5,
+          "right": 179.5,
+          "bottom": 1802.46875
+        },
+        "complete": true,
+        "natural": [
+          187,
+          249
+        ],
+        "clickable": false,
+        "srcset": "/_astro/portada.DjAerQsp_ZeM06N.webp 200w, /_astro/portada.DjAerQsp_Z2mB9Ll.webp 400w"
+      }
+    ],
+    "axe": {
+      "violations": [
+        {
+          "id": "heading-order",
+          "impact": "moderate",
+          "nodes": [
+            {
+              "target": [
+                "div:nth-child(2) > h3"
+              ],
+              "summary": "Fix any of the following:\n  Heading order invalid"
+            }
+          ],
+          "count": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "nodes": [
+            {
+              "target": [
+                "html"
+              ],
+              "summary": "Fix all of the following:\n  Document does not have a main landmark"
+            }
+          ],
+          "count": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": [
+            {
+              "target": [
+                "h1"
+              ],
+              "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "target": [
+                "span"
+              ],
+              "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "target": [
+                ".underline"
+              ],
+              "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "target": [
+                ".galeria-cabana"
+              ],
+              "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            }
+          ],
+          "count": 4
+        }
+      ],
+      "incomplete": []
+    },
+    "resources": [
+      {
+        "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap",
+        "status": 0,
+        "bytes": 814,
+        "duration": 0
+      },
+      {
+        "url": "https://paradisechapadmalal.com/_astro/_slug_.IxwI2vqK.css",
+        "status": 200,
+        "bytes": 5240,
+        "duration": 0
+      },
+      {
+        "url": "https://paradisechapadmalal.com/_astro/fogonero.kNVqNvtf_Z2t7b4i.webp",
+        "status": 200,
+        "bytes": 233720,
+        "duration": 695.3999996185303
+      },
+      {
+        "url": "https://paradisechapadmalal.com/_astro/paradiseicon.Dj1BnRr5_1pVmXe.webp",
+        "status": 200,
+        "bytes": 29214,
+        "duration": 0
+      },
+      {
+        "url": "https://paradisechapadmalal.com/_astro/paradiseiso.BJxsr27d_ZHuWHW.webp",
+        "status": 200,
+        "bytes": 51054,
+        "duration": 0
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+        "status": 200,
+        "bytes": 48256,
+        "duration": 0
+      },
+      {
+        "url": "https://paradisechapadmalal.com/_astro/IMG_2949.BvLGvpfo_Zl7ytw.webp",
+        "status": 200,
+        "bytes": 19598,
+        "duration": 224.89999961853027
+      },
+      {
+        "url": "https://paradisechapadmalal.com/_astro/IMG_2953.ChuGoAA4_PdTMb.webp",
+        "status": 200,
+        "bytes": 23820,
+        "duration": 237.69999980926514
+      },
+      {
+        "url": "https://paradisechapadmalal.com/_astro/IMG_3877.B5kDviEG_ZKdeYQ.webp",
+        "status": 200,
+        "bytes": 17640,
+        "duration": 225.39999961853027
+      },
+      {
+        "url": "https://paradisechapadmalal.com/_astro/IMG_5776.BXeFv4Zg_8jRC6.webp",
+        "status": 200,
+        "bytes": 76848,
+        "duration": 279.0999994277954
+      },
+      {
+        "url": "https://paradisechapadmalal.com/_astro/IMG_2955.GJi-kp_c_GlFvp.webp",
+        "status": 200,
+        "bytes": 28098,
+        "duration": 293.29999923706055
+      },
+      {
+        "url": "https://paradisechapadmalal.com/_astro/IMG_5851.R2oMC2q2_Z1GMiEF.webp",
+        "status": 200,
+        "bytes": 39504,
+        "duration": 74.39999961853027
+      },
+      {
+        "url": "https://paradisechapadmalal.com/_astro/IMG_5859.BQZwK-Ld_ZKhMjM.webp",
+        "status": 200,
+        "bytes": 32876,
+        "duration": 224.80000019073486
+      },
+      {
+        "url": "https://paradisechapadmalal.com/_astro/IMG_5883.2lcMbXCI_Z1Oy998.webp",
+        "status": 200,
+        "bytes": 28256,
+        "duration": 245.60000038146973
+      },
+      {
+        "url": "https://paradisechapadmalal.com/_astro/IMG_5878.CxpuOKoO_Z2eIRki.webp",
+        "status": 200,
+        "bytes": 22744,
+        "duration": 248.80000019073486
+      },
+      {
+        "url": "https://paradisechapadmalal.com/_astro/IMG_5865.CBR53PFX_GSxh.webp",
+        "status": 200,
+        "bytes": 27628,
+        "duration": 276.1000003814697
+      },
+      {
+        "url": "https://paradisechapadmalal.com/_astro/portada.DjAerQsp_Z2mB9Ll.webp",
+        "status": 200,
+        "bytes": 62660,
+        "duration": 372.1000003814697
+      },
+      {
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.10.3/axe.min.js",
+        "status": 200,
+        "bytes": 123557,
+        "duration": 2.90000057220459
+      },
+      {
+        "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap",
+        "status": 200,
+        "bytes": 814,
+        "duration": 47.10000038146973
+      }
+    ]
+  },
+  "casa320": {
+    "url": "https://paradisechapadmalal.com/cabanas/casa-paradise",
+    "viewport": 320,
+    "scrollWidth": 320,
+    "header": [
+      {
+        "text": "Casa Paradise",
+        "x": 16,
+        "right": 180.7578125,
+        "width": 164.7578125
+      },
+      {
+        "text": "Consultar disponibilidad",
+        "x": 180.7578125,
+        "right": 304,
+        "width": 123.2421875
+      }
+    ],
+    "overflow": []
+  },
+  "delmar320": {
+    "path": "/cabanas/del-mar",
+    "status": 200,
+    "scrollWidth": 320,
+    "viewport": 320,
+    "text": "Del Mar\n4 personas\nConsultar disponibilidad",
+    "heroImage": {
+      "src": "https://paradisechapadmalal.com/_astro/delmar.sj57AwMP_1MJeGL.webp",
+      "complete": true
+    },
+    "galleryCount": 7
+  },
+  "rincon320": {
+    "path": "/cabanas/rincon",
+    "status": 200,
+    "scrollWidth": 320,
+    "viewport": 320,
+    "text": "Rincón\n2 personas\nConsultar disponibilidad",
+    "heroImage": {
+      "src": "https://paradisechapadmalal.com/_astro/01rincon.i2Nn-vWJ_1CNdgC.webp",
+      "complete": true
+    },
+    "galleryCount": 7
+  },
+  "nav768": {
+    "viewport": 768,
+    "scrollWidth": 768,
+    "nav": [
+      {
+        "text": "Casa Paradise",
+        "rect": {
+          "x": 24,
+          "w": 91.3125,
+          "right": 115.3125,
+          "y": 8,
+          "h": 48
+        },
+        "color": "rgb(255, 255, 255)",
+        "fontSize": "16px"
+      },
+      {
+        "text": "Rincón",
+        "rect": {
+          "x": 139.3125,
+          "w": 51,
+          "right": 190.3125,
+          "y": 20,
+          "h": 24
+        },
+        "color": "rgb(255, 255, 255)",
+        "fontSize": "16px"
+      },
+      {
+        "text": "Del Mar",
+        "rect": {
+          "x": 214.3125,
+          "w": 49.6875,
+          "right": 264,
+          "y": 8,
+          "h": 48
+        },
+        "color": "rgb(255, 255, 255)",
+        "fontSize": "16px"
+      },
+      {
+        "text": "",
+        "alt": "Paradise Chapadmalal",
+        "rect": {
+          "x": 364,
+          "w": 40,
+          "right": 404,
+          "y": 12,
+          "h": 40
+        },
+        "color": "rgb(0, 0, 0)",
+        "fontSize": "16px"
+      },
+      {
+        "text": "Contactanos",
+        "rect": {
+          "x": 649,
+          "w": 95,
+          "right": 744,
+          "y": 20,
+          "h": 24
+        },
+        "color": "rgb(255, 255, 255)",
+        "fontSize": "16px"
+      }
+    ],
+    "navBackground": "oklab(0 0 0 / 0.3)"
+  },
+  "home320": {
+    "viewport": {
+      "w": 320,
+      "h": 568,
+      "scrollWidth": 326
+    },
+    "hero": [
+      {
+        "text": "Cabañas\nde Mar",
+        "top": 76,
+        "bottom": 156,
+        "w": 192,
+        "h": 80
+      },
+      {
+        "text": "El lugar perfecto para pasar vacaciones o simplemente disfrutar de unos días de descanso con familia y amigos, entre el campo y el mar",
+        "top": 172,
+        "bottom": 492,
+        "w": 192,
+        "h": 320
+      }
+    ],
+    "overflow": [
+      {
+        "tag": "DIV",
+        "id": "",
+        "class": "flex flex-block justify-center items-center",
+        "right": 326,
+        "width": 326
+      },
+      {
+        "tag": "IFRAME",
+        "id": "instagram-embed-0",
+        "class": "instagram-media instagram-media-rendered",
+        "right": 326,
+        "width": 326
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "class": "flex flex-block justify-center items-center",
+        "right": 326,
+        "width": 326
+      },
+      {
+        "tag": "IFRAME",
+        "id": "instagram-embed-1",
+        "class": "instagram-media instagram-media-rendered",
+        "right": 326,
+        "width": 326
+      },
+      {
+        "tag": "DIV",
+        "id": "",
+        "class": "flex flex-block justify-center items-center",
+        "right": 326,
+        "width": 326
+      },
+      {
+        "tag": "IFRAME",
+        "id": "instagram-embed-2",
+        "class": "instagram-media instagram-media-rendered",
+        "right": 326,
+        "width": 326
+      }
+    ],
+    "images": [
+      {
+        "alt": "Portada",
+        "currentSrc": "https://paradisechapadmalal.com/_astro/portada.DjAerQsp_Z1zSvew.webp",
+        "loading": "lazy",
+        "priority": "auto"
+      },
+      {
+        "alt": "Fogonero",
+        "currentSrc": "https://paradisechapadmalal.com/_astro/fogonero.kNVqNvtf_9Gapn.webp",
+        "loading": "eager",
+        "priority": "auto"
+      }
+    ],
+    "animations": [
+      {
+        "playState": "finished",
+        "animationName": "fade-in-bottom"
+      }
+    ]
+  },
+  "whatsapp": {
+    "url": "https://api.whatsapp.com/send?phone=541151837928",
+    "title": "Share on WhatsApp",
+    "text": "Features\nPrivacy\nBlog\nApps\nHelp Center\nFor Business\nLog In\nDownload\n\nChat on WhatsApp with +54 11 5183-7928\n\nOpen app\nContinue to WhatsApp Web\nDon't have the app?\nDownload it now\nDownload\nWhat we do\nFeatures\nBlog\nSecurity\nFor Business\nWho we are\nAbout us\nCareers\nBrand Center\nPrivacy\nUse WhatsApp\nMobile\nDesktop\nTablet\nWhatsApp Web\nNeed help?\nContact Us\nHelp Center\nApps\nSecurity Advisories\n\n2026 © WhatsApp LLC\n\nTerms & Privacy Policy\nSitemap\nEnglish",
+    "links": [
+      {
+        "text": "Home",
+        "href": "https://www.whatsapp.com/"
+      },
+      {
+        "text": "Calling",
+        "href": "https://www.whatsapp.com/calling"
+      },
+      {
+        "text": "Messaging",
+        "href": "https://www.whatsapp.com/messaging"
+      },
+      {
+        "text": "Groups",
+        "href": "https://www.whatsapp.com/groups"
+      },
+      {
+        "text": "Channels",
+        "href": "https://www.whatsapp.com/channels"
+      },
+      {
+        "text": "Meta AI",
+        "href": "https://www.whatsapp.com/meta-ai"
+      },
+      {
+        "text": "Status",
+        "href": "https://www.whatsapp.com/status"
+      },
+      {
+        "text": "Security",
+        "href": "https://www.whatsapp.com/security"
+      },
+      {
+        "text": "WhatsApp Plus",
+        "href": "https://www.whatsapp.com/whatsapp-plus"
+      },
+      {
+        "text": "Parental controls",
+        "href": "https://www.whatsapp.com/parentalcontrols"
+      },
+      {
+        "text": "Privacy",
+        "href": "https://www.whatsapp.com/privacy"
+      },
+      {
+        "text": "Blog",
+        "href": "https://blog.whatsapp.com/"
+      },
+      {
+        "text": "Apps",
+        "href": "https://www.whatsapp.com/download"
+      },
+      {
+        "text": "Help Center",
+        "href": "https://faq.whatsapp.com/"
+      },
+      {
+        "text": "For Business",
+        "href": "https://whatsappbusiness.com/"
+      }
+    ]
+  },
+  "http": {
+    "url": "https://paradisechapadmalal.com/",
+    "status": 200,
+    "redirectCount": 0,
+    "https": true,
+    "text": "Paradise Chapadmalal"
+  },
+  "wwwFinalURL": "https://paradisechapadmalal.com/",
+  "navbarContrast": {
+    "backgroundRGB": [
+      178,
+      178,
+      178
+    ],
+    "foregroundRGB": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 2.120350297268096
+  }
+}
